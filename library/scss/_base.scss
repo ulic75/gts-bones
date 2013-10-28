@@ -436,39 +436,39 @@ PAGE NAVI STYLES
 	margin: 1.1em 0 2.2em;
 }
 	.pagination{
-        text-align: center;
-        ul {
-            display: inline-block;
-            white-space: nowrap;
-            padding:0;
-            clear: both;
-            margin: 1px;
-            li {
-                padding: 0;
-                margin: 0;
-                float: left;
-                display: inline;
-                overflow: hidden;
-                a, span {
-                    margin: 0;
-                    text-decoration: none;
-                    padding: 0;
-                    line-height: 1em;
-                    font-size: 1em;
-                    font-weight: normal;
-                    padding: .5em;
-                    min-width: 1em;
-                    display: block;
-                }
-                span.current{
-                	font-weight: bold;
-                }
-                a:hover, a:focus {
-                    
-                }
-            }
-        }
-    } /* end .bones_page_navi */
+				text-align: center;
+				ul {
+						display: inline-block;
+						white-space: nowrap;
+						padding:0;
+						clear: both;
+						margin: 1px;
+						li {
+								padding: 0;
+								margin: 0;
+								float: left;
+								display: inline;
+								overflow: hidden;
+								a, span {
+										margin: 0;
+										text-decoration: none;
+										padding: 0;
+										line-height: 1em;
+										font-size: 1em;
+										font-weight: normal;
+										padding: .5em;
+										min-width: 1em;
+										display: block;
+								}
+								span.current{
+									font-weight: bold;
+								}
+								a:hover, a:focus {
+										
+								}
+						}
+				}
+		} /* end .bones_page_navi */
 
 	/* fallback previous & next links */
 	.wp-prev-next {
@@ -706,8 +706,8 @@ COMMENT FORM STYLES
 				border-color: #fbc2c4;
 				background-color: #f6e7eb;
 				-webkit-box-shadow: none;
-				   -moz-box-shadow: none;
-				    -ms-box-shadow: none;
+					 -moz-box-shadow: none;
+						-ms-box-shadow: none;
 						box-shadow: none;
 			}
 		}
@@ -791,11 +791,17 @@ FOOTER STYLES
 	clear: both;
 	background: #333334;
 	color: #989898;
-	border-top: 5px solid #dddddd;
+	//border-top: 5px solid #dddddd;
+	-webkit-box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.7);
+	-moz-box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.7);
+	box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.7);
 }
 
 	.outer-footer {
 		background: darken(#333334,5%);
+		-webkit-box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.3);
+		-moz-box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.3);
+		box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.3);
 	}
 
 	/*
