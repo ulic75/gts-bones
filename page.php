@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 			<div id="content">
-
+				<div class="content-header-container"><?php echo get_post_meta($post->ID, 'pageheader', true); ?>
+				</div>
 				<div id="inner-content" class="wrap clearfix">
 
 						<div id="main" class="eightcol first clearfix" role="main">

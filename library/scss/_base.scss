@@ -150,9 +150,22 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	height: 90px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background: #fff;
+	border-bottom: 5px solid #dddddd;
+}
 
-	#logo {}
+#inner-header {
+}
+
+#logo {
+	float: left;
+}
 
 /*********************
 NAVIGATION STYLES
@@ -169,6 +182,10 @@ and more scalable.
 .nav {
 	border: 1px solid #ccc;
 	border-bottom: 0;
+
+	ul {
+		margin: 0;
+	}
 
 	li {
 
@@ -237,14 +254,27 @@ and more scalable.
 
 } /* end .nav */
 
+.top-nav {
+	float: right;
+}
+
 
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 
-#content {
-	margin-top: 2.2em;
+#container {
+	margin-top: 90px;
 }
+
+#content {
+	
+}
+	.content-header-container {
+		
+	}
+
+
 
 		.hentry {
 
@@ -759,7 +789,14 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
+	background: #333334;
+	color: #989898;
+	border-top: 5px solid #dddddd;
 }
+
+	.outer-footer {
+		background: darken(#333334,5%);
+	}
 
 	/*
 	if you checked out the link above:
@@ -780,6 +817,7 @@ FOOTER STYLES
 
 	} /* end .footer-links */
 
-
+	#footerwidget1, #footerwidget2, #footerwidget3 {
+		margin: 0;
+	}
 	.copyright {}
-

@@ -2,13 +2,21 @@
 
 				<div id="inner-footer" class="wrap clearfix">
 
+					<div class="footer-col fourcol first"><?php get_sidebar('footer1'); ?></div>
+					<div class="footer-col fourcol"><?php get_sidebar('footer2'); ?></div>
+					<div class="footer-col fourcol last"><?php get_sidebar('footer3'); ?></div>
+
 					<nav role="navigation">
 							<?php bones_footer_links(); ?>
 					</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
 				</div> <?php // end #inner-footer ?>
+
+				<div class="outer-footer">
+					<div class="wrap clearfix">
+						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
+					</div>
+				</div>
 
 			</footer> <?php // end footer ?>
 
