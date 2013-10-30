@@ -151,7 +151,7 @@ HEADER STYLES
 *********************/
 
 .header {
-	height: 90px;
+	height: 50px;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -160,12 +160,8 @@ HEADER STYLES
 	-webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
 	-moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
 	box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
-	transition: height 0.15s;
 	.lt-ie9 & {
 		border-bottom: 3px solid #bbb;
-	}
-	body.scrolled & {
-		height: 70px;
 	}
 }
 
@@ -174,6 +170,11 @@ HEADER STYLES
 
 #logo {
 	float: left;
+	transition: all .15s;
+	margin: 5px;
+	background: url(../images/logo-full-small.png);
+	height: 40px;
+	width: 216px;
 }
 
 /*********************
@@ -201,9 +202,10 @@ and more scalable.
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 10px 10px;
-			background-color: #eee;
+			padding: 7px 10px;
+			background-color: #fff;
 			border-bottom: 1px solid #ccc;
+			color: #565656;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -265,8 +267,22 @@ and more scalable.
 
 .top-nav {
 	float: right;
+	position: relative;
+	top: 50px;
+	z-index: 10;
+	right: -10px;
+	display: none;
+	font-family: $open-sans;
+	//font-size: 20px;
 }
 
+#compact-menu {
+	font-size: 16px;
+	float: right;
+	position: relative;
+	top: 16px;
+	right: 10px;
+}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -275,11 +291,7 @@ POSTS & CONTENT STYLES
 #container {}
 
 #content {
-	margin-top: 90px;
-	transition: margin-top 0.15s;
-	body.scrolled & {
-		margin-top: 70px;
-	}
+	margin-top: 50px;
 }
 	.content-header-container {
 		

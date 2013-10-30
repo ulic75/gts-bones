@@ -48,13 +48,13 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<span id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></span>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><span id="logo"></span></a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
-
 					<nav role="navigation">
+						<div id="compact-menu" class="icon-menu"></div>
 						<?php bones_main_nav(); ?>
 					</nav>
 

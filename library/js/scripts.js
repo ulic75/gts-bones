@@ -88,6 +88,8 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	$('#compact-menu').click(function() { $('.top-nav').slideToggle(300); });
+
 }); /* end of as page load scripts */
 
 

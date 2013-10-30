@@ -8,3 +8,80 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop. 
 
 ******************************************************************/
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	height: 90px;
+	transition: height 0.15s;
+	body.scrolled & {
+		height: 50px;
+	}
+}
+
+	#logo {
+		background: url(../images/logo-full-medium.png);
+		height: 80px;
+		width: 432px;
+		body.scrolled & {
+			background: url(../images/logo-full-small.png);
+			height: 40px;
+			width: 216px;
+		}
+	}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+
+	li {
+		float: left;
+		position: relative;
+
+		a {
+			border-bottom: 3px solid #fff;
+			color: #565656;
+			height: 90px;
+			line-height: 4;
+			transition: all .15s;
+
+			body.scrolled & {
+				height: 50px;
+				line-height: 2;
+			}	
+
+			&:hover, &:focus {
+				//background-color: #dedede;
+				color: #565656;
+				border-bottom-color: $link-color;
+
+			}
+		}
+	}
+}
+
+.top-nav {
+	display: block;
+	top: 0px;
+	right: 0px;
+}
+
+#compact-menu {
+	display: none;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	margin-top: 90px;
+	transition: margin-top 0.15s;
+	body.scrolled & {
+		margin-top: 50px;
+	}
+}
