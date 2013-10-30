@@ -70,15 +70,23 @@ jQuery(document).ready(function($) {
 	$("html").niceScroll({
 		autohidemode: 'cursor',
 		//background: '#eee',
-		cursorborder: '1px solid #666668',
+		cursorborder: '1px solid #444445',
 		cursorborderradius: 0,
-		cursorcolor: '#444445',
+		cursorcolor: '#666668',
 		cursoropacitymin: .6,
 		cursoropacitymax: 1,
 		cursorwidth: 8,
 		railpadding: {top: 0, right: 1, bottom: 0, left: 0},
 		zindex: 9999
-	});	
+	});
+	
+	$(window).scroll(function() {
+		if($(window).scrollTop() > 0) {
+			$('body').addClass('scrolled');
+		} else {
+			$('body').removeClass('scrolled');
+		}
+	});
 
 }); /* end of as page load scripts */
 

@@ -157,10 +157,16 @@ HEADER STYLES
 	top: 0;
 	z-index: 2;
 	background: #fff;
-	-webkit-box-shadow: 0 0 8px 5px rgba(50,50,50,.3);
-	-moz-box-shadow: 0 0 8px 5px rgba(50,50,50,.3);
-	box-shadow: 0 0 8px 5px rgba(50,50,50,.3);
-
+	-webkit-box-shadow: 0 -1px 10px 3px rgba(50,50,50,.3);
+	-moz-box-shadow: 0 -1px 10px 3px rgba(50,50,50,.3);
+	box-shadow: 0 -1px 10px 3px rgba(50,50,50,.3);
+	transition: height 0.15s;
+	.lt-ie9 & {
+		border-bottom: 3px solid #bbb;
+	}
+	body.scrolled & {
+		height: 70px;
+	}
 }
 
 #inner-header {
@@ -266,12 +272,14 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 
-#container {
-	margin-top: 90px;
-}
+#container {}
 
 #content {
-	
+	margin-top: 90px;
+	transition: margin-top 0.15s;
+	body.scrolled & {
+		margin-top: 70px;
+	}
 }
 	.content-header-container {
 		
@@ -830,3 +838,25 @@ FOOTER STYLES
 		margin: 0;
 	}
 	.copyright {}
+
+/*********************
+ICON STYLES
+*********************/
+
+[class*="icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e600";
+}
