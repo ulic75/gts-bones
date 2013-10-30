@@ -157,9 +157,9 @@ HEADER STYLES
 	top: 0;
 	z-index: 2;
 	background: #fff;
-	-webkit-box-shadow: 0 -1px 10px 3px rgba(50,50,50,.3);
-	-moz-box-shadow: 0 -1px 10px 3px rgba(50,50,50,.3);
-	box-shadow: 0 -1px 10px 3px rgba(50,50,50,.3);
+	-webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
+	-moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
 	transition: height 0.15s;
 	.lt-ie9 & {
 		border-bottom: 3px solid #bbb;
