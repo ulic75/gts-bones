@@ -68,25 +68,36 @@ jQuery(document).ready(function($) {
 	// add all your scripts here
 
 	$("html").niceScroll({
-		autohidemode: 'cursor',
-		//background: '#eee',
-		cursorborder: '1px solid #444445',
+		autohidemode: 'false',
 		cursorborderradius: 0,
-		cursorcolor: '#666668',
-		cursoropacitymin: .6,
-		cursoropacitymax: 1,
-		cursorwidth: 8,
-		railpadding: {top: 0, right: 1, bottom: 0, left: 0},
+		cursorwidth: 10,
+		scrollspeed: 15,
 		zindex: 9999
 	});
-	
+
+	var lastScrollLeft = 0;
+	var documentScrollLeft = 0;
+
 	$(window).scroll(function() {
 		if($(window).scrollTop() > 0) {
 			$('body').addClass('scrolled');
 		} else {
 			$('body').removeClass('scrolled');
 		}
+
+		documentScrollLeft = $(document).scrollLeft();
+		if (lastScrollLeft == documentScrollLeft) {
+			$("#ascrail2000").addClass('active');
+		}
+		lastScrollLeft = documentScrollLeft;
 	});
+
+	$(window).on('scroll', function(e) {
+		documentScrollLeft = $(document).scrollLeft();
+		if (!$("#ascrail2000 div").is(':active')) {
+			$("#ascrail2000").removeClass('active');
+		}
+	}, 250);
 
 	$('#compact-menu').click(function() { $('.top-nav').slideToggle(300); });
 
