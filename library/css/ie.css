@@ -663,35 +663,31 @@ NAVIGATION STYLES
 }
 /* line 47, ../scss/_1030up.scss */
 .nav li a {
-  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
   color: #565656;
-  height: 90px;
-  line-height: 4;
   transition: all .15s;
+  margin-top: 23px;
+  padding-top: 10px;
+  border-bottom-width: 0;
 }
-/* line 54, ../scss/_1030up.scss */
-.lt-ie9 .nav li a {
-  border-bottom-color: #bbb;
-}
-/* line 58, ../scss/_1030up.scss */
+/* line 55, ../scss/_1030up.scss */
 body.scrolled .nav li a {
-  height: 50px;
-  line-height: 2;
+  margin-top: 0;
 }
-/* line 63, ../scss/_1030up.scss */
+/* line 59, ../scss/_1030up.scss */
 .nav li a:hover, .nav li a:focus {
   color: #565656;
-  border-bottom-color: #ef9c00;
+  border-top-color: #ef9c00;
 }
 
-/* line 72, ../scss/_1030up.scss */
+/* line 67, ../scss/_1030up.scss */
 .top-nav {
   display: block;
   top: 0px;
   right: 0px;
 }
 
-/* line 78, ../scss/_1030up.scss */
+/* line 73, ../scss/_1030up.scss */
 #compact-menu {
   display: none;
 }
@@ -699,12 +695,12 @@ body.scrolled .nav li a {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 86, ../scss/_1030up.scss */
+/* line 81, ../scss/_1030up.scss */
 #content {
   margin-top: 90px;
   transition: margin-top 0.15s;
 }
-/* line 89, ../scss/_1030up.scss */
+/* line 84, ../scss/_1030up.scss */
 body.scrolled #content {
   margin-top: 50px;
 }

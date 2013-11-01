@@ -45,25 +45,20 @@ NAVIGATION STYLES
 		position: relative;
 
 		a {
-			border-bottom: 3px solid #fff;
+			border-top: 3px solid #fff;
 			color: #565656;
-			height: 90px;
-			line-height: 4;
 			transition: all .15s;
-
-			.lt-ie9 & {
-				border-bottom-color: #bbb;
-			}
+			margin-top: 23px;
+			padding-top: 10px;
+			border-bottom-width: 0;
 
 			body.scrolled & {
-				height: 50px;
-				line-height: 2;
+				margin-top: 0;
 			}	
 
 			&:hover, &:focus {
 				color: #565656;
-				border-bottom-color: $link-color;
-
+				border-top-color: $link-color;
 			}
 		}
 	}

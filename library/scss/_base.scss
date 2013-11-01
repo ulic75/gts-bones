@@ -228,12 +228,6 @@ and more scalable.
 			&:hover, &:focus {
 			}
 
-			.lt-ie9 & {
-				line-height: 4;
-			}
-			.lt-ie9 body.scrolled & {
-				border-bottom: 3px solid #bbb;
-			}	
 		}
 
 		&:first-child {}
@@ -291,10 +285,6 @@ and more scalable.
 	right: -10px;
 	display: none;
 	font-family: $open-sans;
-	.lt-ie9 & {
-		display: block;
-		top: 0;
-	}
 }
 
 #compact-menu {
