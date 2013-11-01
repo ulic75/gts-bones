@@ -664,30 +664,28 @@ NAVIGATION STYLES
 /* line 47, ../scss/_1030up.scss */
 .nav li a {
   border-top: 3px solid #fff;
-  color: #565656;
   transition: all .15s;
   margin-top: 23px;
   padding-top: 10px;
   border-bottom-width: 0;
 }
-/* line 55, ../scss/_1030up.scss */
+/* line 54, ../scss/_1030up.scss */
 body.scrolled .nav li a {
   margin-top: 0;
 }
-/* line 59, ../scss/_1030up.scss */
+/* line 58, ../scss/_1030up.scss */
 .nav li a:hover, .nav li a:focus {
-  color: #565656;
   border-top-color: #ef9c00;
 }
 
-/* line 67, ../scss/_1030up.scss */
+/* line 66, ../scss/_1030up.scss */
 .top-nav {
   display: block;
   top: 0px;
   right: 0px;
 }
 
-/* line 73, ../scss/_1030up.scss */
+/* line 72, ../scss/_1030up.scss */
 #compact-menu {
   display: none;
 }
@@ -695,12 +693,12 @@ body.scrolled .nav li a {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 81, ../scss/_1030up.scss */
+/* line 80, ../scss/_1030up.scss */
 #content {
   margin-top: 90px;
   transition: margin-top 0.15s;
 }
-/* line 84, ../scss/_1030up.scss */
+/* line 83, ../scss/_1030up.scss */
 body.scrolled #content {
   margin-top: 50px;
 }

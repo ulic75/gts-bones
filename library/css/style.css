@@ -1064,13 +1064,17 @@ and more scalable.
   padding: 7px 10px;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
-  color: #565656;
+  color: #bcbcbc;
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
   the style.scss file where it's relevant. We want to
   keep this file as small as possible!
   */
+}
+/* line 228, ../scss/_base.scss */
+.nav li a:hover, .nav li a:focus {
+  color: #565656;
 }
 /* line 249, ../scss/_base.scss */
 .nav li ul.sub-menu li a,
@@ -2010,30 +2014,28 @@ you can add resource intensive styles.
   /* line 47, ../scss/_1030up.scss */
   .nav li a {
     border-top: 3px solid #fff;
-    color: #565656;
     transition: all .15s;
     margin-top: 23px;
     padding-top: 10px;
     border-bottom-width: 0;
   }
-  /* line 55, ../scss/_1030up.scss */
+  /* line 54, ../scss/_1030up.scss */
   body.scrolled .nav li a {
     margin-top: 0;
   }
-  /* line 59, ../scss/_1030up.scss */
+  /* line 58, ../scss/_1030up.scss */
   .nav li a:hover, .nav li a:focus {
-    color: #565656;
     border-top-color: #ef9c00;
   }
 
-  /* line 67, ../scss/_1030up.scss */
+  /* line 66, ../scss/_1030up.scss */
   .top-nav {
     display: block;
     top: 0px;
     right: 0px;
   }
 
-  /* line 73, ../scss/_1030up.scss */
+  /* line 72, ../scss/_1030up.scss */
   #compact-menu {
     display: none;
   }
@@ -2041,12 +2043,12 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 81, ../scss/_1030up.scss */
+  /* line 80, ../scss/_1030up.scss */
   #content {
     margin-top: 90px;
     transition: margin-top 0.15s;
   }
-  /* line 84, ../scss/_1030up.scss */
+  /* line 83, ../scss/_1030up.scss */
   body.scrolled #content {
     margin-top: 50px;
   }

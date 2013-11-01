@@ -217,7 +217,7 @@ and more scalable.
 			padding: 7px 10px;
 			background-color: #fff;
 			border-bottom: 1px solid #ccc;
-			color: #565656;
+			color: lighten(#565656, 40%);
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -226,8 +226,8 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
+				color: #565656;
 			}
-
 		}
 
 		&:first-child {}

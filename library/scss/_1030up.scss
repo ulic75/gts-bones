@@ -46,7 +46,6 @@ NAVIGATION STYLES
 
 		a {
 			border-top: 3px solid #fff;
-			color: #565656;
 			transition: all .15s;
 			margin-top: 23px;
 			padding-top: 10px;
@@ -57,10 +56,10 @@ NAVIGATION STYLES
 			}	
 
 			&:hover, &:focus {
-				color: #565656;
 				border-top-color: $link-color;
 			}
 		}
+
 	}
 }
 
