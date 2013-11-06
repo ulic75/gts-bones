@@ -14,7 +14,7 @@ HEADER STYLES
 *********************/
 
 .header {
-	height: 90px;
+	height: 100px;
 	transition: height 0.15s;
 	body.scrolled & {
 		height: 50px;
@@ -26,7 +26,9 @@ HEADER STYLES
 		background-size: 432px 80px;
 		height: 80px;
 		width: 432px;
+		margin: 10px 0;
 		body.scrolled & {
+			margin: 5px 0;
 			background-size: 216px 40px;
 			height: 40px;
 			width: 216px;
@@ -47,7 +49,7 @@ NAVIGATION STYLES
 		a {
 			border-top: 3px solid #fff;
 			transition: all .15s;
-			margin-top: 23px;
+			margin-top: 28px;
 			padding-top: 10px;
 			border-bottom-width: 0;
 
@@ -78,9 +80,15 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 90px;
+	margin-top: 100px;
 	transition: margin-top 0.15s;
 	body.scrolled & {
 		margin-top: 50px;
 	}
+}
+
+.computer {
+	width: 360px;
+	height: 300px;
+	margin: 0 0 0 -180px;
 }

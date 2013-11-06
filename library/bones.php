@@ -142,7 +142,6 @@ function bones_scripts_and_styles() {
 		//adding scripts file in the footer
 		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 		wp_register_script( 'nicescroll', get_stylesheet_directory_uri() . '/library/js/jquery.nicescroll.min.js', array( 'jquery' ), '', true );
-		wp_register_script( 'perfect-scrollbar', get_stylesheet_directory_uri() . '/library/js/jquery.perfect-scrollbar.min.js', array( 'jquery' ), '', true );
 		wp_register_script( 'unevent', get_stylesheet_directory_uri() . '/library/js/jquery.unevent.min.js', array( 'jquery' ), '', true );
 		wp_register_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans');
 
@@ -162,7 +161,6 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
 		wp_enqueue_script( 'nicescroll' );
-		wp_enqueue_script( 'perfect-scrollbar' );
 		wp_enqueue_script( 'unevent' );
 
 	}

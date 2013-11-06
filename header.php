@@ -54,7 +54,7 @@
 					<?php // bloginfo('description'); ?>
 
 					<nav role="navigation">
-						<div id="compact-menu" class="icon-menu"></div>
+						<i id="compact-menu" class="icon-menu"></i>
 						<?php bones_main_nav(); ?>
 					</nav>
 

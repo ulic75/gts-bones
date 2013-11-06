@@ -20,6 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: #565656;
+	background: url(../images/binding_dark.png);
 }
 
 /********************
@@ -155,14 +156,12 @@ HEADER STYLES
 	width: 100%;
 	position: fixed;
 	top: 0;
-	z-index: 2;
+	z-index: 20;
 	background: #fff;
-	-webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
-	-moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
-	box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
+	box-shadow: 0 0 7px 3.5px rgba(0,0,0,.15);
 	.lt-ie9 & {
 		border-bottom: 3px solid #bbb;
-		height: 90px;
+		height: 100px;
 	}
 	.lt-ie9 body.scrolled & {
 		height: 50px;
@@ -174,13 +173,16 @@ HEADER STYLES
 
 #logo {
 	float: left;
-	margin: 5px;
+	margin: 5px 0;
 	background: url(../images/logo-full-small.png);
 	background-size: 216px 40px;
+	height: 40px;
+	width: 216px;
 	.lt-ie9 & {
 		background: url(../images/logo-full-medium.png);
 		height: 80px;
 		width: 432px;
+		margin: 10px 0;
 	}
 	.lt-ie9 body.scrolled & {
 			background: url(../images/logo-full-small.png);
@@ -205,16 +207,14 @@ and more scalable.
 	border: 1px solid #ccc;
 	border-bottom: 0;
 
-	ul {
-		margin: 0;
-	}
+	ul {}
 
 	li {
 
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 7px 10px;
+			padding: 7px 13px;
 			background-color: #fff;
 			border-bottom: 1px solid #ccc;
 			color: lighten(#565656, 40%);
@@ -285,6 +285,7 @@ and more scalable.
 	right: -10px;
 	display: none;
 	font-family: $open-sans;
+	margin: 0;
 }
 
 #compact-menu {
@@ -306,13 +307,22 @@ POSTS & CONTENT STYLES
 }
 
 #content {
+	background: #fff;
 	margin-top: 50px;
 }
-	.content-header-container {
-		
+	.page-header-container {}
+
+		.page-header {
+			position: relative;
+			background: $link-color;
+			padding: 50px 0;
+			overflow: hidden;
+		}
+
+	#inner-content {
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
-
-
 
 		.hentry {
 
@@ -826,20 +836,13 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
-	background: #333334;
 	color: #989898;
-	//border-top: 5px solid #dddddd;
-	-webkit-box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.7);
-	-moz-box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.7);
-	box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.7);
+	box-shadow: inset 0 7px 14px -7px rgba(0,0,0,1);
 }
 
 	.outer-footer {
-		background: darken(#333334,5%);
-		-webkit-box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.3);
-		-moz-box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.3);
-		box-shadow: inset 0 10px 8px -8px rgba(0,0,0,.3);
+		background-color: rgba(0,0,0,0.25);
+		box-shadow: inset 0 7px 14px -7px rgba(0,0,0,1), 0 0 7px 3.5px rgba(0,0,0,.15);
 	}
 
 	/*
@@ -888,11 +891,100 @@ ICON STYLES
 	content: "\e600";
 }
 
+.icon-push:before {
+	content: "\e601";
+}
+.icon-readyqueue:before {
+	content: "\e602";
+}
+.icon-gtsdata:before {
+	content: "\e603";
+}
+
+.icon-xl {
+	//font-size: 50px;
+}
+
+.productbox {
+	position: relative;
+}
+
+.productbox-icon-border {
+	position: relative;
+	left: 50%;
+	margin-left: -41px;
+	width: 82px;
+	height: 82px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	transition: all 0.2s;
+	.productbox:hover & {
+		border-color: $link-color;
+	}	
+}
+
+.productbox-icon {
+	position: relative;
+	top: 3px;
+	left: 3px;
+	font-size: 35px;
+	line-height: 70px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	color: #fff;
+	background: #565656;
+	text-align: center;
+	transition: all 0.2s;
+	.productbox:hover & {
+		background: $link-color;
+	}
+	& i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -18px;
+		margin-left: -18px;
+	}
+}
+
+.productbox-text {
+	position: relative;
+	padding: 5px;
+	border: 3px solid transparent;
+}
+
+.productbox-text-title {
+	text-align: center;
+	margin-top: 30px
+}
+
+.productbox-text-desc {
+	p {
+		margin-bottom: 0;
+		text-align: justify;
+	}
+}
+
+.computer {
+	content: "";
+	position: relative;
+	display: none;
+	top: 0;
+	left: 50%;
+	margin: 40px 0 10px -135px;
+	width: 270px;
+	height: 225px;
+	background: url(../images/computer.png);
+	background-size: 100%;
+}
+
 
 /*********************
 SCROLLBAR STYLES
 Used in conjunction with Nicescroll (http://nicescroll.areaaperta.com/)
 *********************/
+
 #ascrail2000, #ascrail2000-hr {
 	background-clip: padding-box !important;
 	border: 1px solid transparent !important;
@@ -921,6 +1013,9 @@ Used in conjunction with Nicescroll (http://nicescroll.areaaperta.com/)
 
 #ascrail2000 {
 	width: 12px !important;
+	.lt-ie9 & {
+		width: 11px !important;
+	}
 	border-right: 1px solid rgba(245,245,245,1) !important;
 	box-shadow: inset 1px 0 0 rgba(0,0,0,.1) !important;
 	div {
@@ -943,4 +1038,30 @@ Used in conjunction with Nicescroll (http://nicescroll.areaaperta.com/)
 		height: 8px !important;
 		box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset -1px 0 0 rgba(0,0,0,.07) !important;
 	}
+}
+
+input:focus, button:focus, a.button:focus, select:focus, textarea:focus {
+	-webkit-box-shadow: $link-color 0 0 5px 0;
+	-moz-box-shadow: $link-color 0 0 5px 0;
+	box-shadow: $link-color 0 0 5px 0;
+	border-color: lighten($link-color, 30%);
+}
+
+input, textarea {
+	border-radius: 3px !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #dddddd;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #dddddd;
+}
+
+input.placeholder_text,
+textarea.placeholder_text {
+  color: #dddddd;
 }

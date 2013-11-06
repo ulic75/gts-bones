@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
 	
 	// add all your scripts here
 
-	$("html").niceScroll({
+	$("body").niceScroll({
 		autohidemode: 'false',
 		cursorborderradius: 0,
 		cursorwidth: 10,
