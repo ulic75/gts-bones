@@ -666,14 +666,15 @@ NAVIGATION STYLES
 *********************/
 /* line 42, ../scss/_1030up.scss */
 .nav {
+  position: relative;
   border: 0;
 }
-/* line 45, ../scss/_1030up.scss */
+/* line 46, ../scss/_1030up.scss */
 .nav li {
   float: left;
-  position: relative;
+  font-size: 100%;
 }
-/* line 49, ../scss/_1030up.scss */
+/* line 50, ../scss/_1030up.scss */
 .nav li a {
   border-top: 3px solid #fff;
   transition: all .15s;
@@ -681,23 +682,25 @@ NAVIGATION STYLES
   padding-top: 10px;
   border-bottom-width: 0;
 }
-/* line 56, ../scss/_1030up.scss */
+/* line 57, ../scss/_1030up.scss */
 body.scrolled .nav li a {
   margin-top: 0;
 }
-/* line 60, ../scss/_1030up.scss */
+/* line 61, ../scss/_1030up.scss */
 .nav li a:hover, .nav li a:focus {
   border-top-color: #ef9c00;
 }
 
-/* line 68, ../scss/_1030up.scss */
+/* line 69, ../scss/_1030up.scss */
 .top-nav {
   display: block;
+  float: right;
+  position: absolute;
   top: 0px;
   right: 0px;
 }
 
-/* line 74, ../scss/_1030up.scss */
+/* line 77, ../scss/_1030up.scss */
 #compact-menu {
   display: none;
 }
@@ -705,17 +708,17 @@ body.scrolled .nav li a {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 82, ../scss/_1030up.scss */
+/* line 85, ../scss/_1030up.scss */
 #content {
   margin-top: 100px;
   transition: margin-top 0.15s;
 }
-/* line 85, ../scss/_1030up.scss */
+/* line 88, ../scss/_1030up.scss */
 body.scrolled #content {
   margin-top: 50px;
 }
 
-/* line 90, ../scss/_1030up.scss */
+/* line 93, ../scss/_1030up.scss */
 .computer {
   width: 360px;
   height: 300px;

@@ -53,11 +53,15 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
+					<i id="compact-menu" class="icon-menu"></i>
+
 					<nav role="navigation">
-						<i id="compact-menu" class="icon-menu"></i>
 						<?php bones_main_nav(); ?>
 					</nav>
 
 				</div> <?php // end #inner-header ?>
+
+				<div class="clearfix">
+				</div>
 
 			</header> <?php // end header ?>

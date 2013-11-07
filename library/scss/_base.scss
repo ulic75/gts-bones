@@ -169,6 +169,7 @@ HEADER STYLES
 }
 
 #inner-header {
+	position: relative;
 }
 
 #logo {
@@ -203,13 +204,20 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
+nav {
+	float: right;
+	width: 100%;
+}
+
 .nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
+	border-top: 1px solid #ccc;
+	//border-bottom: 0;
 
 	ul {}
 
 	li {
+		text-align: center;
+		font-size: 125%;
 
 		a {
 			display: block;
@@ -278,11 +286,7 @@ and more scalable.
 } /* end .nav */
 
 .top-nav {
-	float: right;
-	position: relative;
-	top: 50px;
 	z-index: 10;
-	right: -10px;
 	display: none;
 	font-family: $open-sans;
 	margin: 0;

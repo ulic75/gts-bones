@@ -40,11 +40,12 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
+	position: relative;
 	border: 0;
 
 	li {
 		float: left;
-		position: relative;
+		font-size: 100%;
 
 		a {
 			border-top: 3px solid #fff;
@@ -67,6 +68,8 @@ NAVIGATION STYLES
 
 .top-nav {
 	display: block;
+	float: right;
+	position: absolute;
 	top: 0px;
 	right: 0px;
 }
