@@ -833,411 +833,508 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1681c4, #1990db);
 }
 
-/* line 10, ../scss/_formalize.scss */
-.input_tiny {
-  width: 50px;
-}
+/********************************************************************
 
-/* line 14, ../scss/_formalize.scss */
-.input_small {
-  width: 100px;
-}
+Project: Formee - http://www.formeeee.org
+Launched: 
+Version: 3.1
+Authors: Bernard De Luna - http://www.bernarddeluna.com
+         Daniel Araujo - http://www.dnlaraujo.com.br
+		 Marcello Manso - http://www.marcellomanso.com.br
 
-/* line 18, ../scss/_formalize.scss */
-.input_medium {
-  width: 150px;
-}
-
-/* line 22, ../scss/_formalize.scss */
-.input_large {
-  width: 200px;
-}
-
-/* line 26, ../scss/_formalize.scss */
-.input_xlarge {
-  width: 250px;
-}
-
-/* line 30, ../scss/_formalize.scss */
-.input_xxlarge {
-  width: 300px;
-}
-
-/* line 35, ../scss/_formalize.scss */
-.input_full {
-  width: 100%;
-}
-
-/* line 41, ../scss/_formalize.scss */
-.input_full_wrap {
+********************************************************************
+Structure
+********************************************************************/
+/* Little CSS Reset to preserv form structure */
+/* fix  ff bugs */
+/* line 22, ../scss/_formee-structure.scss */
+.formee:after,
+.formee div:after,
+.formee ol:after,
+.formee ul:after,
+.formee li:after,
+.formee dl:after {
+  content: ".";
   display: block;
-  padding-right: 8px;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
 }
 
-/* line 50, ../scss/_formalize.scss */
-input[type="search"]::-webkit-search-decoration {
-  display: none;
-}
-
-/* line 61, ../scss/_formalize.scss */
-input:invalid,
-button:invalid,
-a.button:invalid,
-select:invalid,
-textarea:invalid {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-/* line 66, ../scss/_formalize.scss */
-input:focus,
-button:focus,
-a.button:focus,
-select:focus,
-textarea:focus {
-  -webkit-box-shadow: #0066ff 0 0 5px 0;
-  -moz-box-shadow: #0066ff 0 0 5px 0;
-  box-shadow: #0066ff 0 0 5px 0;
-  z-index: 1;
-}
-
-/* line 77, ../scss/_formalize.scss */
-input[type="file"]:focus, input[type="file"]:active,
-input[type="radio"]:focus,
-input[type="radio"]:active,
-input[type="checkbox"]:focus,
-input[type="checkbox"]:active {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-/* line 86, ../scss/_formalize.scss */
-button,
-a.button,
-input[type="reset"],
-input[type="submit"],
-input[type="button"] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
-  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
-  background-image: -moz-linear-gradient(#ffffff, #dddddd);
-  background-image: -o-linear-gradient(#ffffff, #dddddd);
-  background-image: linear-gradient(#ffffff, #dddddd);
-  border: 1px solid;
-  border-color: #ddd #bbb #999;
-  cursor: pointer;
-  color: #333;
-  display: inline-block;
-  outline: 0;
-  overflow: visible;
+/* Form Structure */
+/* line 33, ../scss/_formee-structure.scss */
+.formee {
   margin: 0;
-  padding: 3px 10px;
-  text-shadow: white 0 1px 1px;
-  text-decoration: none;
-  vertical-align: top;
-  width: auto;
-  font: bold 12px/1.3 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
-  background: #dddddd url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAAAAADhgtq/AAAAHElEQVQoz2P8z4ADsOCW+UeGnsFs2nDzz5AMHQA+JRlAyyOraAAAAABJRU5ErkJggg==) repeat-x;
-  background: #dddddd url('../images/button.png') repeat-x;
-  *padding-top: 2px;
-  *padding-bottom: 0;
-}
-/* line 116, ../scss/_formalize.scss */
-button:hover,
-a.button:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(1px, #eeeeee), color-stop(100%, #cccccc));
-  background-image: -webkit-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  background-image: -moz-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  background-image: -o-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  background-image: linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  text-decoration: none;
-}
-/* line 121, ../scss/_formalize.scss */
-button:active,
-a.button:active,
-input[type="reset"]:active,
-input[type="submit"]:active,
-input[type="button"]:active {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #eeeeee));
-  background-image: -webkit-linear-gradient(#dddddd, #eeeeee);
-  background-image: -moz-linear-gradient(#dddddd, #eeeeee);
-  background-image: -o-linear-gradient(#dddddd, #eeeeee);
-  background-image: linear-gradient(#dddddd, #eeeeee);
-  -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
-  -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
-  box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
-  border-color: #999 #bbb #ddd;
-}
-/* line 135, ../scss/_formalize.scss */
-button::-moz-focus-inner,
-a.button::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner {
-  border: 0;
   padding: 0;
 }
 
-/* line 142, ../scss/_formalize.scss */
-a.button {
-  *padding-bottom: 3px;
+/* line 34, ../scss/_formee-structure.scss */
+.formee fieldset {
+  border: 1px solid #d4d4d4;
+  position: relative;
+  height: 100%;
+  padding: 1.2em 0;
+  margin: 0 0 4em;
 }
 
-/* line 147, ../scss/_formalize.scss */
-button {
-  *padding-top: 1px;
-  *padding-bottom: 1px;
+/* line 41, ../scss/_formee-structure.scss */
+.formee legend {
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0.5% 0.5% 0.8%;
 }
 
-/* line 168, ../scss/_formalize.scss */
-textarea,
-select,
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-background-clip: padding;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  background-color: white;
-  border: 1px solid;
-  border-color: #848484 #c1c1c1 #e1e1e1;
-  color: black;
-  outline: 0;
-  margin: 0;
-  padding: 2px 3px;
-  text-align: left;
-  font-size: 13px;
-  height: 1.8em;
-  vertical-align: top;
-  font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
-  *padding-top: 2px;
-  *padding-bottom: 1px;
-  *height: auto;
-}
-/* line 196, ../scss/_formalize.scss */
-textarea[disabled],
-select[disabled],
-input[type="date"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="email"][disabled],
-input[type="month"][disabled],
-input[type="number"][disabled],
-input[type="password"][disabled],
-input[type="search"][disabled],
-input[type="tel"][disabled],
-input[type="text"][disabled],
-input[type="time"][disabled],
-input[type="url"][disabled],
-input[type="week"][disabled] {
-  background-color: #eee;
+/* line 46, ../scss/_formee-structure.scss */
+.formee h3 {
+  margin: 2em 1% .8%;
+  padding: 0.5% 0.5% 0.8%;
 }
 
-/* line 207, ../scss/_formalize.scss */
-button[disabled],
-input[disabled],
-select[disabled],
-select[disabled] option,
-select[disabled] optgroup,
-textarea[disabled],
-a.button_disabled {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -moz-user-select: -moz-none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  user-select: none;
-  color: #888;
-  cursor: default;
+/* input without label */
+/* line 52, ../scss/_formee-structure.scss */
+.formee-no-lbl {
+  position: relative;
+  padding-bottom: 0;
 }
 
-/* line 221, ../scss/_formalize.scss */
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #888;
+/* input without label */
+/* line 61, ../scss/_formee-structure.scss */
+.formee-no-lbl input,
+.formee-no-lbl label,
+.formee-no-lbl span,
+.formee-no-lbl ul,
+.formee-no-lbl p {
+  position: absolute;
+  bottom: 0;
 }
 
-/* line 226, ../scss/_formalize.scss */
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #888;
+/* multiple containers inside field-grid */
+/* line 66, ../scss/_formee-structure.scss */
+.formee .left {
+  clear: none;
+  float: left !important;
+  margin-right: 0.3em !important;
 }
 
-/* line 231, ../scss/_formalize.scss */
-input.placeholder_text,
-textarea.placeholder_text {
-  color: #888;
+/* line 71, ../scss/_formee-structure.scss */
+.formee .right {
+  clear: none;
+  float: right !important;
+  margin-left: 0.3em !important;
 }
 
-/* line 237, ../scss/_formalize.scss */
-textarea,
-select[size],
-select[multiple] {
+/* form elements  */
+/* line 79, ../scss/_formee-structure.scss */
+.formee-lbl, .formee label {
+  display: block;
   height: auto;
+  margin: 0.2em 0 0.5em;
 }
 
-/* line 244, ../scss/_formalize.scss */
-select[size="0"],
-select[size="1"] {
-  height: 1.8em;
-  *height: auto;
-}
-
-@media (-webkit-min-device-pixel-ratio: 0) {
-  /* line 257, ../scss/_formalize.scss */
-  select[size],
-  select[multiple],
-  select[multiple][size] {
-    background-image: none;
-    padding-right: 3px;
-  }
-
-  /* line 264, ../scss/_formalize.scss */
-  select,
-  select[size="0"],
-  select[size="1"] {
-    background-image: url(data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==);
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 20px;
-  }
-
-  /* line 272, ../scss/_formalize.scss */
-  ::-webkit-validation-bubble-message {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #666666), color-stop(1, black));
-    border: 0;
-    color: white;
-    font: 13px/17px "Lucida Grande", Arial, "Liberation Sans", FreeSans, sans-serif;
-    overflow: hidden;
-    padding: 15px 15px 17px;
-    text-shadow: black 0 0 1px;
-    min-height: 16px;
-  }
-
-  /* line 287, ../scss/_formalize.scss */
-  ::-webkit-validation-bubble-arrow,
-  ::-webkit-validation-bubble-top-outer-arrow,
-  ::-webkit-validation-bubble-top-inner-arrow {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background: #666;
-    border-color: #666;
-  }
-}
-/* line 295, ../scss/_formalize.scss */
-textarea {
-  min-height: 40px;
-  overflow: auto;
-  resize: vertical;
+/* line 99, ../scss/_formee-structure.scss */
+.formee .formee-txt,
+.formee input[type="date"],
+.formee input[type="datetime"],
+.formee input[type="datetime-local"],
+.formee input[type="email"],
+.formee input[type="month"],
+.formee input[type="number"],
+.formee input[type="password"],
+.formee input[type="search"],
+.formee input[type="tel"],
+.formee input[type="text"],
+.formee input[type="time"],
+.formee input[type="url"],
+.formee input[type="week"],
+.formee textarea,
+.formee select {
+  vertical-align: middle;
+  line-height: 1.1em;
   width: 100%;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*ie7*/
+  *width: 99%;
 }
 
-/* line 302, ../scss/_formalize.scss */
-optgroup {
-  color: black;
-  font-style: normal;
-  font-weight: normal;
-  font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
-}
-/* line 312, ../scss/_formalize.scss */
-optgroup::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+/* line 113, ../scss/_formee-structure.scss */
+.formee textarea {
+  height: 10em;
 }
 
-/* line 344, ../scss/_formalize.scss */
-.ie6_button,
-* html button,
-* html a.button {
-  background: #dddddd url('../images/button.png') repeat-x;
-  border: 1px solid;
-  border-color: #ddd #bbb #999;
-  cursor: pointer;
-  color: #333;
-  font: bold 12px/1.2 Arial, sans-serif;
-  padding: 2px 10px 0;
-  text-decoration: none;
-  overflow: visible;
-  vertical-align: top;
-  width: auto;
+/* line 114, ../scss/_formee-structure.scss */
+.formee select {
+  padding: 9px;
+  height: 2.7em;
 }
 
-/* line 358, ../scss/_formalize.scss */
-* html a.button {
+/* line 116, ../scss/_formee-structure.scss */
+.formee-list .formee-lbl,
+.formee-list label {
+  display: inline;
+  height: auto;
+  margin: 0.5em 0 0.8em 2px;
+}
+
+/* line 121, ../scss/_formee-structure.scss */
+.formee-req {
   position: relative;
   top: 3px;
-  padding-bottom: 2px;
 }
 
-/* line 364, ../scss/_formalize.scss */
-* html button {
-  padding-top: 1px;
-  padding-bottom: 1px;
+/* line 129, ../scss/_formee-structure.scss */
+.formee-msg-info,
+.formee-msg-warning,
+.formee-msg-error,
+.formee-msg-success {
+  padding: 20px 20px 15px 38px;
+  border: 1px solid #ccc;
+  display: block;
+  height: auto;
+  margin: 0 1.5% 0.8em;
+  clear: both;
 }
 
-/* line 371, ../scss/_formalize.scss */
-.ie6_input,
-* html textarea,
-* html select {
-  background: white;
-  border: 1px solid;
-  border-color: #848484 #c1c1c1 #e1e1e1;
-  color: black;
-  padding: 2px 3px 1px;
-  font-size: 13px;
-  font-family: Arial, sans-serif;
+/* line 140, ../scss/_formee-structure.scss */
+.formee-msg-info li,
+.formee-msg-warning li,
+.formee-msg-error li,
+.formee-msg-success li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: .4%;
+  font-size: 1.4em;
+  line-height: 1.1em;
   vertical-align: top;
 }
 
-/* line 382, ../scss/_formalize.scss */
-* html select {
-  margin-top: 1px;
+/* form button  */
+/* line 154, ../scss/_formee-structure.scss */
+.formee-button,
+.formee input[type="submit"],
+.formee input[type="button"],
+.formee input[type="reset"] {
+  padding: 8px 15px 9px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #D4D4D4;
 }
 
-/* line 388, ../scss/_formalize.scss */
-.placeholder_text,
-.ie6_input_disabled,
-.ie6_button_disabled {
-  color: #888;
+/* lista de chk e rdo */
+/* line 163, ../scss/_formee-structure.scss */
+.formee-list {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* line 392, ../scss/_formalize.scss */
-.ie6_input_disabled {
-  background: #eee;
+/* line 170, ../scss/_formee-structure.scss */
+.formee-list li,
+.formee-list li {
+  margin: 0.5em 0.6em 0.8em;
+  float: left;
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 176, ../scss/_formee-structure.scss */
+.formee-list input {
+  margin-right: 0.2em;
+}
+
+/* input size */
+/* line 179, ../scss/_formee-structure.scss */
+.formee-small {
+  width: 30% !important;
+  float: left;
+  margin-right: 10px;
+  display: inline;
+  /*ie7*/
+  *width: 25% !important;
+}
+
+/* line 188, ../scss/_formee-structure.scss */
+.formee-medium {
+  width: 50% !important;
+  float: left;
+  margin-right: 10px;
+  display: inline;
+  /*ie7*/
+  *width: 45% !important;
+}
+
+/********************************************************************
+
+Project: Formee - http://www.formeeee.org
+Last Updated: 
+Version: 3.1
+Authors: Bernard De Luna - http://www.bernarddeluna.com
+         Daniel Araujo - http://www.dnlaraujo.com.br
+		 Marcello Manso - http://www.marcellomanso.com.br
+			 
+********************************************************************
+Style
+********************************************************************/
+/* line 14, ../scss/_formee-style.scss */
+.formee fieldset {
+  background: #fff;
+  /*corner*/
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* hover effect */
+/* line 23, ../scss/_formee-style.scss */
+.field-button:hover {
+  background: transparent;
+}
+
+/* Form legend and titles */
+/* line 27, ../scss/_formee-style.scss */
+.formee {
+  font: normal 10px/1.1em Arial,Sans-Serif;
+}
+
+/* line 29, ../scss/_formee-style.scss */
+.formee legend,
+.formee h3 {
+  font-size: 3em;
+  line-height: 1.2em;
+  letter-spacing: -.035em;
+  color: #2b2b2b;
+  font-weight: normal;
+}
+
+/* form elements  */
+/* line 39, ../scss/_formee-style.scss */
+.formee-lbl,
+.formee label {
+  color: #2b2b2b;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  vertical-align: middle;
+}
+
+/* line 45, ../scss/_formee-style.scss */
+.formee-req {
+  font-weight: bold;
+  font-style: normal;
+  color: #d10000;
+  font-size: 1.2em;
+  line-height: .85em;
+}
+
+/* line 67, ../scss/_formee-style.scss */
+.formee .formee-txt,
+.formee input[type="date"],
+.formee input[type="datetime"],
+.formee input[type="datetime-local"],
+.formee input[type="email"],
+.formee input[type="month"],
+.formee input[type="number"],
+.formee input[type="password"],
+.formee input[type="search"],
+.formee input[type="tel"],
+.formee input[type="text"],
+.formee input[type="time"],
+.formee input[type="url"],
+.formee input[type="week"],
+.formee textarea,
+.formee select {
+  border-color: #c6c6c6 #dadada #eaeaea;
+  background: #fafafa;
+  color: #999;
+  font-size: 1.4em;
+  font-family: inherit;
+  /*corner*/
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 78, ../scss/_formee-style.scss */
+.formee select {
+  border-color: #c6c6c6 #dadada #eaeaea;
+  background: #fafafa;
+  color: #999;
+}
+
+/* line 98, ../scss/_formee-style.scss */
+.formee .formee-txt:hover,
+.formee input[type="date"]:hover,
+.formee input[type="datetime"]:hover,
+.formee input[type="datetime-local"]:hover,
+.formee input[type="email"]:hover,
+.formee input[type="month"]:hover,
+.formee input[type="number"]:hover,
+.formee input[type="password"]:hover,
+.formee input[type="search"]:hover,
+.formee input[type="tel"]:hover,
+.formee input[type="text"]:hover,
+.formee input[type="time"]:hover,
+.formee input[type="url"]:hover,
+.formee input[type="week"]:hover,
+.formee textarea:hover,
+.formee select:hover {
+  color: #666;
+  background: #fff none;
+  border-color: #c6c6c6;
+}
+
+/* line 118, ../scss/_formee-style.scss */
+form .formee-txt:focus,
+.formee input[type="date"]:focus,
+.formee input[type="datetime"]:focus,
+.formee input[type="datetime-local"]:focus,
+.formee input[type="email"]:focus,
+.formee input[type="month"]:focus,
+.formee input[type="number"]:focus,
+.formee input[type="password"]:focus,
+.formee input[type="search"]:focus,
+.formee input[type="tel"]:focus,
+.formee input[type="text"]:focus,
+.formee input[type="time"]:focus,
+.formee input[type="url"]:focus,
+.formee input[type="week"]:focus,
+.formee textarea:focus,
+.formee select:focus {
+  color: #333;
+  background: #fff none;
+  border-color: #659ec9 #70aedd #a8cfec;
+  outline: 0;
+}
+
+/* form msg status  */
+/* line 130, ../scss/_formee-style.scss */
+.formee-msg-info,
+.formee-msg-warning,
+.formee-msg-error,
+.formee-msg-success {
+  color: #2b2b2b;
+  /*corner*/
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 140, ../scss/_formee-style.scss */
+.formee-msg-info h3,
+.formee-msg-warning h3,
+.formee-msg-error h3,
+.formee-msg-success h3 {
+  font-size: 2em;
+  line-height: 1.1em;
+  letter-spacing: -.02em;
+  padding: 0;
+  margin: 0 0 .3em 0;
+}
+
+/* line 147, ../scss/_formee-style.scss */
+.formee-msg-info {
+  background: #d1ecf7 url(../images/form-ic-info.png) no-repeat 12px 23px;
+  border-color: #bcdfef;
+}
+
+/* line 151, ../scss/_formee-style.scss */
+.formee-msg-warning {
+  background: #fff6bf url(../images/form-ic-warning.png) no-repeat 12px 23px;
+  border-color: #fceb77;
+}
+
+/* line 155, ../scss/_formee-style.scss */
+.formee-msg-error {
+  background: #fad0d0 url(../images/form-ic-error.png) no-repeat 12px 23px;
+  border-color: #f6abab;
+}
+
+/* line 159, ../scss/_formee-style.scss */
+.formee-msg-success {
+  background: #e5f8ce url(../images/form-ic-success.png) no-repeat 12px 23px;
+  border-color: #d0f1a6;
+}
+
+/* line 164, ../scss/_formee-style.scss */
+.formee-msg-success strong, .formee-msg-success a {
+  color: #62b548;
+}
+
+/* line 165, ../scss/_formee-style.scss */
+.formee-msg-info strong, .formee-msg-info a {
+  color: #11689e;
+}
+
+/* line 166, ../scss/_formee-style.scss */
+.formee-msg-warning strong, .formee-msg-warning a {
+  color: #957210;
+}
+
+/* line 167, ../scss/_formee-style.scss */
+.formee-msg-error strong, .formee-msg-error a {
+  color: #b01717;
+}
+
+/* form validation */
+/* line 170, ../scss/_formee-style.scss */
+.formee-error {
+  border-color: #FAD0D0 !important;
+  color: #b01717 !important;
+  /* shadow */
+  -moz-box-shadow: 0 0 3px 0 rgba(176, 23, 23, 0.4);
+  -webkit-box-shadow: 0 0 3px 0 rgba(176, 23, 23, 0.4);
+  box-shadow: 0 0 3px 0 rgba(176, 23, 23, 0.4);
+}
+
+/* form buttons */
+/* line 183, ../scss/_formee-style.scss */
+.formee-button,
+.formee input[type="submit"],
+.formee input[type="button"],
+.formee input[type="reset"] {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: -.015em;
+  color: #fff;
+  border-color: #3a77a4;
+  background: #5393c2;
+  /* gradient */
+  background: -moz-linear-gradient(top, #5393c2 40%, #3a77a4);
+  background: -webkit-linear-gradient(top, #5393c2 40%, #3a77a4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5393c2', endColorstr='#3a77a4');
+  /* corner */
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  /* shadow */
+  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+}
+
+/* line 208, ../scss/_formee-style.scss */
+.formee-button:hover,
+.formee input[type="submit"]:hover,
+.formee input[type="button"]:hover,
+.formee input[type="reset"]:hover {
+  background: #70aedd;
+  /* gradient */
+  background: -moz-linear-gradient(top, #70aedd 40%, #69a4d0);
+  background: -webkit-linear-gradient(top, #70aedd 40%, #69a4d0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70aedd', endColorstr='#69a4d0');
+  /* shadow */
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
 }
 
 /*
@@ -1486,7 +1583,7 @@ nav {
   padding: 7px 13px;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
-  color: #bcbcbc;
+  color: #565656;
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
@@ -1575,25 +1672,29 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 401, ../scss/_base.scss */
+/* line 368, ../scss/_base.scss */
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5 {
+  color: #ef9c00;
+}
+/* line 405, ../scss/_base.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 408, ../scss/_base.scss */
+/* line 412, ../scss/_base.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 424, ../scss/_base.scss */
+/* line 428, ../scss/_base.scss */
 .entry-content video, .entry-content object {
   max-width: 100%;
   height: auto;
 }
-/* line 429, ../scss/_base.scss */
+/* line 433, ../scss/_base.scss */
 .entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
@@ -1601,20 +1702,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 437, ../scss/_base.scss */
+/* line 441, ../scss/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 443, ../scss/_base.scss */
+/* line 447, ../scss/_base.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 449, ../scss/_base.scss */
+/* line 453, ../scss/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1628,17 +1729,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 487, ../scss/_base.scss */
+/* line 491, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 490, ../scss/_base.scss */
+/* line 494, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 492, ../scss/_base.scss */
+/* line 496, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1646,7 +1747,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 498, ../scss/_base.scss */
+/* line 502, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1654,7 +1755,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 504, ../scss/_base.scss */
+/* line 508, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1666,18 +1767,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 515, ../scss/_base.scss */
+/* line 519, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 530, ../scss/_base.scss */
+/* line 534, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 534, ../scss/_base.scss */
+/* line 538, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1687,12 +1788,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 545, ../scss/_base.scss */
+/* line 549, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 562, ../scss/_base.scss */
+/* line 566, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1703,7 +1804,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 564, ../scss/_base.scss */
+/* line 568, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1713,63 +1814,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 572, ../scss/_base.scss */
+/* line 576, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 576, ../scss/_base.scss */
+/* line 580, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 594, ../scss/_base.scss */
+/* line 598, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 598, ../scss/_base.scss */
+/* line 602, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 603, ../scss/_base.scss */
+/* line 607, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 617, ../scss/_base.scss */
+/* line 621, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 620, ../scss/_base.scss */
+/* line 624, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 635, ../scss/_base.scss */
+/* line 639, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 638, ../scss/_base.scss */
+/* line 642, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 646, ../scss/_base.scss */
+/* line 650, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 649, ../scss/_base.scss */
+/* line 653, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 653, ../scss/_base.scss */
+/* line 657, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 663, ../scss/_base.scss */
+/* line 667, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1777,17 +1878,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 688, ../scss/_base.scss */
+/* line 692, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 691, ../scss/_base.scss */
+/* line 695, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 700, ../scss/_base.scss */
+/* line 704, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1799,7 +1900,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 712, ../scss/_base.scss */
+/* line 716, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1808,27 +1909,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 724, ../scss/_base.scss */
+/* line 728, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 728, ../scss/_base.scss */
+/* line 732, ../scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 731, ../scss/_base.scss */
+/* line 735, ../scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 737, ../scss/_base.scss */
+/* line 741, ../scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 745, ../scss/_base.scss */
+/* line 749, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1839,14 +1940,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 751, ../scss/_base.scss */
+/* line 755, ../scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 756, ../scss/_base.scss */
+/* line 760, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1859,14 +1960,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 769, ../scss/_base.scss */
+/* line 773, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 774, ../scss/_base.scss */
+/* line 778, ../scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1875,7 +1976,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 787, ../scss/_base.scss */
+/* line 791, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1883,13 +1984,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 800, ../scss/_base.scss */
+/* line 804, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 805, ../scss/_base.scss */
+/* line 809, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1897,7 +1998,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 821, ../scss/_base.scss */
+/* line 825, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1905,13 +2006,13 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 842, ../scss/_base.scss */
+/* line 846, ../scss/_base.scss */
 .footer {
   color: #989898;
   box-shadow: inset 0 7px 14px -7px black;
 }
 
-/* line 847, ../scss/_base.scss */
+/* line 851, ../scss/_base.scss */
 .outer-footer {
   background-color: rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 7px 14px -7px black, 0 0 7px 3.5px rgba(0, 0, 0, 0.15);
@@ -1927,7 +2028,7 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
-/* line 871, ../scss/_base.scss */
+/* line 875, ../scss/_base.scss */
 #footerwidget1, #footerwidget2, #footerwidget3 {
   margin: 0;
 }
@@ -1935,7 +2036,7 @@ view.
 /*********************
 ICON STYLES
 *********************/
-/* line 880, ../scss/_base.scss */
+/* line 884, ../scss/_base.scss */
 [class*="icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -1949,32 +2050,32 @@ ICON STYLES
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 894, ../scss/_base.scss */
+/* line 898, ../scss/_base.scss */
 .icon-menu:before {
   content: "\e600";
 }
 
-/* line 898, ../scss/_base.scss */
+/* line 902, ../scss/_base.scss */
 .icon-push:before {
   content: "\e601";
 }
 
-/* line 901, ../scss/_base.scss */
+/* line 905, ../scss/_base.scss */
 .icon-readyqueue:before {
   content: "\e602";
 }
 
-/* line 904, ../scss/_base.scss */
+/* line 908, ../scss/_base.scss */
 .icon-gtsdata:before {
   content: "\e603";
 }
 
-/* line 912, ../scss/_base.scss */
+/* line 916, ../scss/_base.scss */
 .productbox {
   position: relative;
 }
 
-/* line 916, ../scss/_base.scss */
+/* line 920, ../scss/_base.scss */
 .productbox-icon-border {
   position: relative;
   left: 50%;
@@ -1985,12 +2086,12 @@ ICON STYLES
   border: 3px solid transparent;
   transition: all 0.2s;
 }
-/* line 925, ../scss/_base.scss */
+/* line 929, ../scss/_base.scss */
 .productbox:hover .productbox-icon-border {
   border-color: #ef9c00;
 }
 
-/* line 930, ../scss/_base.scss */
+/* line 934, ../scss/_base.scss */
 .productbox-icon {
   position: relative;
   top: 3px;
@@ -2005,11 +2106,11 @@ ICON STYLES
   text-align: center;
   transition: all 0.2s;
 }
-/* line 943, ../scss/_base.scss */
+/* line 947, ../scss/_base.scss */
 .productbox:hover .productbox-icon {
   background: #ef9c00;
 }
-/* line 946, ../scss/_base.scss */
+/* line 950, ../scss/_base.scss */
 .productbox-icon i {
   position: absolute;
   top: 50%;
@@ -2018,26 +2119,26 @@ ICON STYLES
   margin-left: -18px;
 }
 
-/* line 955, ../scss/_base.scss */
+/* line 959, ../scss/_base.scss */
 .productbox-text {
   position: relative;
   padding: 5px;
   border: 3px solid transparent;
 }
 
-/* line 961, ../scss/_base.scss */
+/* line 965, ../scss/_base.scss */
 .productbox-text-title {
   text-align: center;
   margin-top: 30px;
 }
 
-/* line 967, ../scss/_base.scss */
+/* line 971, ../scss/_base.scss */
 .productbox-text-desc p {
   margin-bottom: 0;
   text-align: justify;
 }
 
-/* line 973, ../scss/_base.scss */
+/* line 977, ../scss/_base.scss */
 .computer {
   content: "";
   position: relative;
@@ -2055,49 +2156,49 @@ ICON STYLES
 SCROLLBAR STYLES
 Used in conjunction with Nicescroll (http://nicescroll.areaaperta.com/)
 *********************/
-/* line 992, ../scss/_base.scss */
+/* line 996, ../scss/_base.scss */
 #ascrail2000, #ascrail2000-hr {
   background-clip: padding-box !important;
   border: 1px solid transparent !important;
   padding: 1px !important;
   background-color: whitesmoke !important;
 }
-/* line 997, ../scss/_base.scss */
+/* line 1001, ../scss/_base.scss */
 .lt-ie9 #ascrail2000, .lt-ie9 #ascrail2000-hr {
   border: 1px solid #D1D1D1 !important;
 }
-/* line 1000, ../scss/_base.scss */
+/* line 1004, ../scss/_base.scss */
 #ascrail2000 div, #ascrail2000-hr div {
   background-color: #cccccc !important;
   background-clip: padding-box !important;
 }
-/* line 1003, ../scss/_base.scss */
+/* line 1007, ../scss/_base.scss */
 #ascrail2000 div:hover, #ascrail2000-hr div:hover {
   background-color: #999999 !important;
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
 }
-/* line 1007, ../scss/_base.scss */
+/* line 1011, ../scss/_base.scss */
 #ascrail2000 div:active, #ascrail2000-hr div:active {
   background-color: #7f7f7f !important;
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35) !important;
 }
-/* line 1012, ../scss/_base.scss */
+/* line 1016, ../scss/_base.scss */
 #ascrail2000.active div, #ascrail2000-hr.active div {
   background-color: #7f7f7f !important;
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35) !important;
 }
 
-/* line 1018, ../scss/_base.scss */
+/* line 1022, ../scss/_base.scss */
 #ascrail2000 {
   width: 12px !important;
   border-right: 1px solid whitesmoke !important;
   box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1) !important;
 }
-/* line 1020, ../scss/_base.scss */
+/* line 1024, ../scss/_base.scss */
 .lt-ie9 #ascrail2000 {
   width: 11px !important;
 }
-/* line 1025, ../scss/_base.scss */
+/* line 1029, ../scss/_base.scss */
 #ascrail2000 div {
   min-height: 28px !important;
   padding: 100px 0 0 !important;
@@ -2106,13 +2207,13 @@ Used in conjunction with Nicescroll (http://nicescroll.areaaperta.com/)
   width: 8px !important;
 }
 
-/* line 1034, ../scss/_base.scss */
+/* line 1038, ../scss/_base.scss */
 #ascrail2000-hr {
   height: 12px !important;
   border-bottom: 1px solid whitesmoke !important;
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1) !important;
 }
-/* line 1038, ../scss/_base.scss */
+/* line 1042, ../scss/_base.scss */
 #ascrail2000-hr div {
   min-width: 28px !important;
   padding: 0 0 0 100px !important;
@@ -2121,35 +2222,51 @@ Used in conjunction with Nicescroll (http://nicescroll.areaaperta.com/)
   box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.07) !important;
 }
 
-/* line 1047, ../scss/_base.scss */
-input:focus, button:focus, a.button:focus, select:focus, textarea:focus {
-  -webkit-box-shadow: #ef9c00 0 0 5px 0;
-  -moz-box-shadow: #ef9c00 0 0 5px 0;
-  box-shadow: #ef9c00 0 0 5px 0;
+/* line 1066, ../scss/_base.scss */
+form .formee-txt,
+.formee input[type="date"],
+.formee input[type="datetime"],
+.formee input[type="datetime-local"],
+.formee input[type="email"],
+.formee input[type="month"],
+.formee input[type="number"],
+.formee input[type="password"],
+.formee input[type="search"],
+.formee input[type="tel"],
+.formee input[type="text"],
+.formee input[type="time"],
+.formee input[type="url"],
+.formee input[type="week"],
+.formee textarea,
+.formee select {
+  margin: 5px 0;
+}
+/* line 1068, ../scss/_base.scss */
+form .formee-txt:focus,
+.formee input[type="date"]:focus,
+.formee input[type="datetime"]:focus,
+.formee input[type="datetime-local"]:focus,
+.formee input[type="email"]:focus,
+.formee input[type="month"]:focus,
+.formee input[type="number"]:focus,
+.formee input[type="password"]:focus,
+.formee input[type="search"]:focus,
+.formee input[type="tel"]:focus,
+.formee input[type="text"]:focus,
+.formee input[type="time"]:focus,
+.formee input[type="url"]:focus,
+.formee input[type="week"]:focus,
+.formee textarea:focus,
+.formee select:focus {
   border-color: #ffd689;
 }
 
-/* line 1054, ../scss/_base.scss */
-input, textarea {
-  border-radius: 3px !important;
-}
-
-/* line 1059, ../scss/_base.scss */
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #dddddd;
-}
-
-/* line 1064, ../scss/_base.scss */
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #dddddd;
-}
-
-/* line 1069, ../scss/_base.scss */
-input.placeholder_text,
-textarea.placeholder_text {
-  color: #dddddd;
+/* line 1076, ../scss/_base.scss */
+.formee-button,
+.formee input[type="submit"],
+.formee input[type="button"],
+.formee input[type="reset"] {
+  padding: 5px 15px 5px;
 }
 
 /*

@@ -192,4 +192,11 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 
+add_filter( 'wpcf7_form_class_attr', 'your_custom_form_class_attr' );
+
+function your_custom_form_class_attr( $class ) {
+	$class .= ' formee';
+	return $class;
+}
+
 ?>

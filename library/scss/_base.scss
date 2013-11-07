@@ -225,7 +225,7 @@ nav {
 			padding: 7px 13px;
 			background-color: #fff;
 			border-bottom: 1px solid #ccc;
-			color: lighten(#565656, 40%);
+			color: #565656;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -364,6 +364,10 @@ POSTS & CONTENT STYLES
 
 		/* entry content */
 		.entry-content {
+
+			h1, h2, h3, h4, h5 {
+				color: $link-color;
+			}
 
 			p {}
 
@@ -1044,28 +1048,31 @@ Used in conjunction with Nicescroll (http://nicescroll.areaaperta.com/)
 	}
 }
 
-input:focus, button:focus, a.button:focus, select:focus, textarea:focus {
-	-webkit-box-shadow: $link-color 0 0 5px 0;
-	-moz-box-shadow: $link-color 0 0 5px 0;
-	box-shadow: $link-color 0 0 5px 0;
-	border-color: lighten($link-color, 30%);
+form .formee-txt,
+.formee input[type="date"],
+.formee input[type="datetime"],
+.formee input[type="datetime-local"],
+.formee input[type="email"],
+.formee input[type="month"],
+.formee input[type="number"],
+.formee input[type="password"],
+.formee input[type="search"],
+.formee input[type="tel"],
+.formee input[type="text"],
+.formee input[type="time"],
+.formee input[type="url"],
+.formee input[type="week"],
+.formee textarea,
+.formee select {
+	margin: 5px 0;
+	&:focus {
+		border-color: lighten($link-color, 30%);
+	}
 }
 
-input, textarea {
-	border-radius: 3px !important;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #dddddd;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #dddddd;
-}
-
-input.placeholder_text,
-textarea.placeholder_text {
-  color: #dddddd;
+.formee-button,
+.formee input[type="submit"],
+.formee input[type="button"],
+.formee input[type="reset"] {
+  padding: 5px 15px 5px;
 }
