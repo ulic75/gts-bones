@@ -191,85 +191,54 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 220, ../scss/_mixins.scss */
+/*
 .button, .button:visited {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #ad7100;
-  border-top-color: #cb8500;
-  border-left-color: #cb8500;
-  padding: 4px 12px;
-  color: white;
-  display: inline-block;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  margin-bottom: 20px;
-  line-height: 21px;
-  border-radius: 4px;
-  background-color: #d58b00;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef9c00), to(#d58b00));
-  background-image: -webkit-linear-gradient(top, #ef9c00, #d58b00);
-  background-image: -moz-linear-gradient(top, #ef9c00, #d58b00);
-  background-image: -o-linear-gradient(top, #ef9c00, #d58b00);
-  background-image: linear-gradient(to bottom, #ef9c00, #d58b00);
-}
-/* line 239, ../scss/_mixins.scss */
-.button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-  color: white;
-  border: 1px solid #ad7100;
-  border-top-color: #895900;
-  border-left-color: #895900;
-  background-color: #bc7b00;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d58b00), to(#bc7b00));
-  background-image: -webkit-linear-gradient(top, #d58b00, #bc7b00);
-  background-image: -moz-linear-gradient(top, #d58b00, #bc7b00);
-  background-image: -o-linear-gradient(top, #d58b00, #bc7b00);
-  background-image: linear-gradient(to bottom, #d58b00, #bc7b00);
-}
-/* line 247, ../scss/_mixins.scss */
-.button:active, .button:visited:active {
-  background-color: #ef9c00;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d58b00), to(#ef9c00));
-  background-image: -webkit-linear-gradient(top, #d58b00, #ef9c00);
-  background-image: -moz-linear-gradient(top, #d58b00, #ef9c00);
-  background-image: -o-linear-gradient(top, #d58b00, #ef9c00);
-  background-image: linear-gradient(to bottom, #d58b00, #ef9c00);
+	font-family: $sans-serif;
+	border: 1px solid darken($link-color, 13%);
+	border-top-color: darken($link-color, 7%);
+	border-left-color: darken($link-color, 7%);
+	padding: 4px 12px;
+	color: $white;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(0,0,0, .75);
+	cursor: pointer;
+	margin-bottom: 20px;
+	line-height: 21px;
+	border-radius: 4px;
+	@include css-gradient($link-color, darken($link-color, 5%));
+
+
+	&:hover, &:focus {
+		color: $white;
+	  	border: 1px solid darken($link-color, 13%);
+	  	border-top-color: darken($link-color, 20%);
+	 	border-left-color: darken($link-color, 20%);
+		@include css-gradient(darken($link-color, 5%), darken($link-color, 10%));
+	}
+
+	&:active {
+		@include css-gradient(darken($link-color, 5%), $link-color);
+	}
 }
 
-/* line 252, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
-  border-color: #1472ad;
-  text-shadow: 0 1px 1px #1472ad;
-  background-color: #1681c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
-  background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
-  background-image: -moz-linear-gradient(top, #1990db, #1681c4);
-  background-image: -o-linear-gradient(top, #1990db, #1681c4);
-  background-image: linear-gradient(to bottom, #1990db, #1681c4);
-  box-shadow: inset 0 0 3px #59b3ec;
-}
-/* line 258, ../scss/_mixins.scss */
-.blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
-  border-color: #116396;
-  background-color: #1472ad;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
-  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
-  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
-}
-/* line 262, ../scss/_mixins.scss */
-.blue-button:active, .blue-button:visited:active {
-  background-color: #1990db;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
-  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
-  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
-  background-image: -o-linear-gradient(top, #1681c4, #1990db);
-  background-image: linear-gradient(to bottom, #1681c4, #1990db);
-}
+	border-color: darken($bones-blue, 10%);
+	text-shadow: 0 1px 1px darken($bones-blue, 10%);
+	@include css-gradient( $bones-blue, darken($bones-blue, 5%) );
+	box-shadow: inset 0 0 3px lighten($bones-blue, 16%);
 
+	&:hover, &:focus {
+		border-color: darken($bones-blue, 15%);
+		@include css-gradient( darken($bones-blue, 4%), darken($bones-blue, 10%) );
+	}
+	&:active {
+		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
+	}
+}
+*/
 /******************************************************************
 Site Name:
 Author:

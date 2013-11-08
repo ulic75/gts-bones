@@ -217,6 +217,7 @@ probably best not to use it. I mean, were you going to anyway? */
 BUTTONS
 *********************/
 
+/*
 .button, .button:visited {
 	font-family: $sans-serif;
 	border: 1px solid darken($link-color, 13%);
@@ -263,3 +264,4 @@ BUTTONS
 		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
 	}
 }
+*/
