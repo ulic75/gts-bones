@@ -19,7 +19,7 @@ body {
 	font-family: $open-sans;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+	color: $text-color;
 	background: url(../images/binding_dark.png);
 }
 
@@ -225,7 +225,7 @@ nav {
 			padding: 7px 13px;
 			background-color: #fff;
 			border-bottom: 1px solid #ccc;
-			color: #565656;
+			color: $text-color;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -234,7 +234,7 @@ nav {
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-				color: #565656;
+				color: $text-color;
 			}
 		}
 
@@ -880,38 +880,7 @@ FOOTER STYLES
 /*********************
 ICON STYLES
 *********************/
-
-[class*="icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-menu:before {
-	content: "\e600";
-}
-
-.icon-push:before {
-	content: "\e601";
-}
-.icon-readyqueue:before {
-	content: "\e602";
-}
-.icon-gtsdata:before {
-	content: "\e603";
-}
-
-.icon-xl {
-	//font-size: 50px;
-}
+@import "icons";
 
 .productbox {
 	position: relative;
@@ -941,7 +910,7 @@ ICON STYLES
 	height: 70px;
 	border-radius: 50%;
 	color: #fff;
-	background: #565656;
+	background: $text-color;
 	text-align: center;
 	transition: all 0.2s;
 	.productbox:hover & {
@@ -969,6 +938,40 @@ ICON STYLES
 	p {
 		margin-bottom: 0;
 		text-align: justify;
+	}
+}
+
+/*.productbox-learn-more {
+	margin-top: 20px;
+	margin-bottom: 70px;
+	text-align: center;
+	& a, & a:visited {
+		padding: 12px;
+		color: #ffffff;
+		font-weight: normal;
+		letter-spacing: 0;
+		transition: background 0.15s;
+		background: lighten($text-color, 45%);
+		border-width: 0;
+		&:hover, &:active, .productbox:hover & {
+			background: $link-color;
+		}
+	}
+}*/
+
+.product-feature {
+	& p {
+		font-size: 90%;
+	}
+}
+
+.product-feature-header {
+	font-size: 125%;
+	font-weight: bolder;
+	color: $link-color;
+	& i {
+		margin-right: 10px;
+		color: $text-color;
 	}
 }
 

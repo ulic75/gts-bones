@@ -1,0 +1,35 @@
+[class*="icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e600";
+}
+.icon-push:before {
+	content: "\e601";
+}
+.icon-readyqueue:before {
+	content: "\e602";
+}
+.icon-gtsdata:before {
+	content: "\e603";
+}
+.icon-money:before {
+	content: "\e604";
+}
+.icon-cloud:before {
+	content: "\e605";
+}
+.icon-happy:before {
+	content: "\e606";
+}
