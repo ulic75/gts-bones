@@ -2,9 +2,9 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="grid-container">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+						<div id="main" class="grid-col-66" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

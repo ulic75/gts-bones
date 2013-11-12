@@ -20,14 +20,6 @@ GENERAL STYLES
 body {}
 
 /*********************
-LAYOUT & GRID STYLES
-*********************/
-
-.wrap {
-	max-width: 1140px;
-}
-
-/*********************
 HEADER STYLES
 *********************/
 
@@ -142,10 +134,7 @@ SIDEBARS & ASIDES
 	margin-top: 2.2em;
 }
 
-	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
+	.widgettitle {}
 
 	.widget {
 		padding: 0 10px;
@@ -285,4 +274,3 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-

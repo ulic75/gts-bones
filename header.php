@@ -41,27 +41,23 @@
 
 	<body <?php body_class(); ?>>
 
-		<div id="container">
+		<header class="header" role="banner">
 
-			<header class="header" role="banner">
+			<? // <div id="inner-header" class="wrap clearfix"> ?>
+			<div id="inner-header" class="grid-container grid-parent">
 
-				<div id="inner-header" class="wrap clearfix">
+				<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
+				<a href="<?php echo home_url(); ?>" rel="nofollow"><div id="logo"></div></a>
 
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><div id="logo"></div></a>
+				<?php // if you'd like to use the site description you can un-comment it below ?>
+				<?php // bloginfo('description'); ?>
 
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
+				<i id="compact-menu" class="icon-menu"></i>
 
-					<i id="compact-menu" class="icon-menu"></i>
+			</div> <?php // end #inner-header ?>
 
-					<nav role="navigation">
-						<?php bones_main_nav(); ?>
-					</nav>
+				<nav role="navigation">
+					<?php bones_main_nav(); ?>
+				</nav>
 
-				</div> <?php // end #inner-header ?>
-
-				<div class="clearfix">
-				</div>
-
-			</header> <?php // end header ?>
+		</header> <?php // end header ?>

@@ -65,15 +65,6 @@ style a page via class
 	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
 
 /*********************
-LAYOUT & GRID STYLES
-*********************/
-
-.wrap {
-	width: 96%;
-	margin: 0 auto;
-}
-
-/*********************
 LINK STYLES
 *********************/
 
@@ -205,7 +196,8 @@ and more scalable.
 */
 
 nav {
-	float: right;
+	position: absolute;
+	top: 50px;
 	width: 100%;
 }
 
@@ -317,16 +309,13 @@ POSTS & CONTENT STYLES
 	.page-header-container {}
 
 		.page-header {
-			position: relative;
+			//position: relative;
 			background: $link-color;
 			padding: 50px 0;
-			overflow: hidden;
+			//overflow: hidden;
 		}
 
-	#inner-content {
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
+	#inner-content {}
 
 		.hentry {
 
@@ -816,7 +805,10 @@ SIDEBARS & ASIDES
 
 .sidebar {}
 
-	.widgettitle {}
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
 
 	.widget {
 
@@ -884,6 +876,7 @@ ICON STYLES
 
 .productbox {
 	position: relative;
+	padding: 50px 30px;
 }
 
 .productbox-icon-border {
@@ -927,7 +920,7 @@ ICON STYLES
 
 .productbox-text {
 	position: relative;
-	padding: 0 10px;
+	//padding: 0 10px;
 }
 
 .productbox-text-title {
@@ -988,6 +981,13 @@ ICON STYLES
 	background-size: 100%;
 }
 
+.contact-container {
+	padding: 50px 0;
+}
+
+.contact-section {
+	margin-bottom: 30px;
+}
 
 /*********************
 SCROLLBAR STYLES

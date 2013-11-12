@@ -10,9 +10,9 @@ Template Name: Full HTML
 				<header class="page-header-container">
 					<?php echo get_post_meta($post->ID, 'pageheader', true); ?>
 				</header>
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content">
 
-						<div id="main" class="twelvecol first clearfix" role="main">
+						<div id="main" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
