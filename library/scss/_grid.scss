@@ -20,6 +20,27 @@ $media-desktop-min: 1031px;
 	.grid-parent {
 		@extend %grid-parent;
 	}
+	.grid-col-10 {
+		@extend %grid-10;
+	}
+	.grid-col-25 {
+		@extend %grid-25;
+	}
+	.grid-col-33 {
+		@extend %grid-33;
+	}
+	.grid-col-50 {
+		@extend %grid-50;
+	}
+	.grid-col-66 {
+		@extend %grid-66;
+	}
+	.grid-col-75 {
+		@extend %grid-75;
+	}
+	.grid-col-90 {
+		@extend %grid-90;
+	}
 }
 
 /*======================= */
@@ -31,10 +52,13 @@ $media-desktop-min: 1031px;
 	.grid-container {
 		max-width: 96%;
 	}
+	.grid-col-10,
 	.grid-col-25,
 	.grid-col-33,
 	.grid-col-50,
-	.grid-col-75 {
+	.grid-col-66,
+	.grid-col-75,
+	.grid-col-90 {
 		@extend %grid-100;
 	}
 }
@@ -55,7 +79,10 @@ $media-desktop-min: 1031px;
 /*======================== */
 
 @media screen and (min-width: $media-mobile) {
-	@import "unsemantic/unsemantic-vars";
+	/*@import "unsemantic/unsemantic-vars";
+	.grid-col-10 {
+		@extend %grid-10;
+	}
 	.grid-col-25 {
 		@extend %grid-25;
 	}
@@ -71,4 +98,7 @@ $media-desktop-min: 1031px;
 	.grid-col-75 {
 		@extend %grid-75;
 	}
+	.grid-col-90 {
+		@extend %grid-90;
+	}*/
 }

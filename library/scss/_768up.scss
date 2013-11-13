@@ -274,3 +274,14 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
+
+.product-header-gtsdata {
+	//height: 290px;
+	img {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+	}
+}

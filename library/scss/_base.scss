@@ -952,19 +952,66 @@ ICON STYLES
 	}
 }*/
 
-.product-feature {
-	& p {
-		font-size: 90%;
+.product-header-gtsdata {
+	position: relative;
+	header {
+		margin-top: 45px;
+		margin-bottom: 30px;
+		width: 50%;
 	}
+	p {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	img {
+		display: none;
+		.lt-ie9 & {
+			display: block;
+		}
+	}
+
+}
+
+.product-feature {
+	padding: 0 20px;
+	p {
+		font-size: 90%;
+		text-align: justify;
+	}
+}
+
+.product-feature-row {
+	padding: 50px 0;
 }
 
 .product-feature-header {
 	font-size: 125%;
 	font-weight: bolder;
-	color: $link-color;
+	color: #fffafa;
 	& i {
 		margin-right: 10px;
-		color: $text-color;
+	}
+}
+
+.product-details, .product-screenshots {
+	padding: 50px 20px;
+	i {
+		position: absolute;
+		margin-left: -50px;
+		margin-top: 5px;
+		text-align: center;
+		font-size: 200%;
+	}
+	p {
+		padding-bottom: 25px;
+		padding-left: 50px;
+		margin: 0;
+	}
+}
+
+.post-91 {
+	.accent-strip {
+		background-color: $link-color;
 	}
 }
 

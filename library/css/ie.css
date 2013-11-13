@@ -285,65 +285,13 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
-}
-/*======================= */
-/* "Mobile" screen width */
-/*======================= */
-@media screen and (max-width: 767px) {
-  /* line 49, ../scss/unsemantic/_unsemantic-vars.scss */
-  .grid-col-25:before,
-  .grid-col-33:before,
-  .grid-col-50:before,
-  .grid-col-75:before,
-  .grid-col-25:after,
-  .grid-col-33:after,
-  .grid-col-50:after,
-  .grid-col-75:after {
-    content: ".";
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    font-size: 0;
-    line-height: 0;
-    width: 0;
-    height: 0;
+
+  /* line 151, ../scss/unsemantic/_unsemantic-vars.scss */
+  .grid-col-10 {
+    float: left;
+    width: 10%;
   }
 
-  /* line 60, ../scss/unsemantic/_unsemantic-vars.scss */
-  .grid-col-25:after,
-  .grid-col-33:after,
-  .grid-col-50:after,
-  .grid-col-75:after {
-    clear: both;
-  }
-
-  /* line 234, ../scss/unsemantic/_unsemantic-vars.scss */
-  .grid-col-25,
-  .grid-col-33,
-  .grid-col-50,
-  .grid-col-75 {
-    clear: both;
-    width: 100%;
-  }
-
-  /* line 31, ../scss/_grid.scss */
-  .grid-container {
-    max-width: 96%;
-  }
-}
-/*======================= */
-/* "Tablet" screen width */
-/*======================= */
-@media screen and (max-width: 1030px) {
-  /* line 48, ../scss/_grid.scss */
-  .grid-container {
-    max-width: 96%;
-  }
-}
-/*======================== */
-/* "Desktop" screen width */
-/*======================== */
-@media screen and (min-width: 767px) {
   /* line 151, ../scss/unsemantic/_unsemantic-vars.scss */
   .grid-col-25 {
     float: left;
@@ -362,6 +310,12 @@ body {
     width: 75%;
   }
 
+  /* line 151, ../scss/unsemantic/_unsemantic-vars.scss */
+  .grid-col-90 {
+    float: left;
+    width: 90%;
+  }
+
   /* line 194, ../scss/unsemantic/_unsemantic-vars.scss */
   .grid-col-33 {
     float: left;
@@ -373,6 +327,99 @@ body {
     float: left;
     width: 66.66667%;
   }
+}
+/*======================= */
+/* "Mobile" screen width */
+/*======================= */
+@media screen and (max-width: 767px) {
+  /* line 49, ../scss/unsemantic/_unsemantic-vars.scss */
+  .grid-col-10:before,
+  .grid-col-25:before,
+  .grid-col-33:before,
+  .grid-col-50:before,
+  .grid-col-66:before,
+  .grid-col-75:before,
+  .grid-col-90:before,
+  .grid-col-10:after,
+  .grid-col-25:after,
+  .grid-col-33:after,
+  .grid-col-50:after,
+  .grid-col-66:after,
+  .grid-col-75:after,
+  .grid-col-90:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* line 60, ../scss/unsemantic/_unsemantic-vars.scss */
+  .grid-col-10:after,
+  .grid-col-25:after,
+  .grid-col-33:after,
+  .grid-col-50:after,
+  .grid-col-66:after,
+  .grid-col-75:after,
+  .grid-col-90:after {
+    clear: both;
+  }
+
+  /* line 234, ../scss/unsemantic/_unsemantic-vars.scss */
+  .grid-col-10,
+  .grid-col-25,
+  .grid-col-33,
+  .grid-col-50,
+  .grid-col-66,
+  .grid-col-75,
+  .grid-col-90 {
+    clear: both;
+    width: 100%;
+  }
+
+  /* line 52, ../scss/_grid.scss */
+  .grid-container {
+    max-width: 96%;
+  }
+}
+/*======================= */
+/* "Tablet" screen width */
+/*======================= */
+@media screen and (max-width: 1030px) {
+  /* line 72, ../scss/_grid.scss */
+  .grid-container {
+    max-width: 96%;
+  }
+}
+/*======================== */
+/* "Desktop" screen width */
+/*======================== */
+@media screen and (min-width: 767px) {
+  /*@import "unsemantic/unsemantic-vars";
+  .grid-col-10 {
+  	@extend %grid-10;
+  }
+  .grid-col-25 {
+  	@extend %grid-25;
+  }
+  .grid-col-33 {
+  	@extend %grid-33;
+  }
+  .grid-col-50 {
+  	@extend %grid-50;
+  }
+  .grid-col-66 {
+  	@extend %grid-66;
+  }
+  .grid-col-75 {
+  	@extend %grid-75;
+  }
+  .grid-col-90 {
+  	@extend %grid-90;
+  }*/
 }
 /******************************************************************
 Site Name: 
@@ -601,6 +648,15 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
+/* line 280, ../scss/_768up.scss */
+.product-header-gtsdata img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
 /******************************************************************
 Site Name: 
 Author: 
@@ -713,6 +769,15 @@ body.scrolled #content {
   width: 360px;
   height: 300px;
   margin: 0 0 0 -180px;
+}
+
+/* line 108, ../scss/_1030up.scss */
+.product-header-gtsdata {
+  min-height: 360px;
+}
+/* line 113, ../scss/_1030up.scss */
+.product-header-gtsdata img {
+  width: 500px;
 }
 
 /* 
