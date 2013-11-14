@@ -2844,21 +2844,31 @@ you can add resource intensive styles.
   *********************/
   /* line 42, ../scss/_1030up.scss */
   nav {
-    width: 96%;
-    top: 0;
+    position: relative;
+    top: -100px;
+    max-width: 1140px;
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 50, ../scss/_1030up.scss */
+  body.scrolled nav {
+    height: 50px;
+    top: -50px;
   }
 
-  /* line 47, ../scss/_1030up.scss */
+  /* line 56, ../scss/_1030up.scss */
   .nav {
     position: relative;
     border: 0;
   }
-  /* line 51, ../scss/_1030up.scss */
+  /* line 60, ../scss/_1030up.scss */
   .nav li {
     float: left;
     font-size: 100%;
   }
-  /* line 55, ../scss/_1030up.scss */
+  /* line 64, ../scss/_1030up.scss */
   .nav li a {
     border-top: 3px solid #fff;
     transition: all .15s;
@@ -2866,16 +2876,16 @@ you can add resource intensive styles.
     padding-top: 10px;
     border-bottom-width: 0;
   }
-  /* line 62, ../scss/_1030up.scss */
+  /* line 71, ../scss/_1030up.scss */
   body.scrolled .nav li a {
     margin-top: 0;
   }
-  /* line 66, ../scss/_1030up.scss */
+  /* line 75, ../scss/_1030up.scss */
   .nav li a:hover, .nav li a:focus {
     border-top-color: #ef9c00;
   }
 
-  /* line 74, ../scss/_1030up.scss */
+  /* line 83, ../scss/_1030up.scss */
   .top-nav {
     display: block;
     float: right;
@@ -2884,7 +2894,7 @@ you can add resource intensive styles.
     right: 0px;
   }
 
-  /* line 82, ../scss/_1030up.scss */
+  /* line 91, ../scss/_1030up.scss */
   #compact-menu {
     display: none;
   }
@@ -2892,33 +2902,33 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 90, ../scss/_1030up.scss */
+  /* line 99, ../scss/_1030up.scss */
   #content {
     margin-top: 100px;
     transition: margin-top 0.15s;
   }
-  /* line 93, ../scss/_1030up.scss */
+  /* line 102, ../scss/_1030up.scss */
   body.scrolled #content {
     margin-top: 50px;
   }
 
-  /* line 98, ../scss/_1030up.scss */
+  /* line 107, ../scss/_1030up.scss */
   .productbox-learn-more {
     margin-bottom: 0;
   }
 
-  /* line 102, ../scss/_1030up.scss */
+  /* line 111, ../scss/_1030up.scss */
   .computer {
     width: 360px;
     height: 300px;
     margin: 0 0 0 -180px;
   }
 
-  /* line 108, ../scss/_1030up.scss */
+  /* line 117, ../scss/_1030up.scss */
   .product-header-gtsdata {
     min-height: 360px;
   }
-  /* line 113, ../scss/_1030up.scss */
+  /* line 122, ../scss/_1030up.scss */
   .product-header-gtsdata img {
     width: 500px;
   }
