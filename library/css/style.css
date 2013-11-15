@@ -2426,70 +2426,70 @@ ICON STYLES
 SCROLLBAR STYLES
 Used in conjunction with Nicescroll (http://nicescroll.areaaperta.com/)
 *********************/
-/* line 1044, ../scss/_base.scss */
-#ascrail2000, #ascrail2000-hr {
-  background-clip: padding-box !important;
-  border: 1px solid transparent !important;
-  padding: 1px !important;
+/* line 1045, ../scss/_base.scss */
+#ascrail2000:hover, #ascrail2000.active, #ascrail2000-hr:hover, #ascrail2000-hr.active {
   background-color: whitesmoke !important;
 }
-/* line 1049, ../scss/_base.scss */
-.lt-ie9 #ascrail2000, .lt-ie9 #ascrail2000-hr {
+/* line 1048, ../scss/_base.scss */
+.lt-ie9 #ascrail2000:hover, .lt-ie9 #ascrail2000.active, .lt-ie9 #ascrail2000-hr:hover, .lt-ie9 #ascrail2000-hr.active {
   border: 1px solid #D1D1D1 !important;
 }
-/* line 1052, ../scss/_base.scss */
+/* line 1051, ../scss/_base.scss */
 #ascrail2000 div, #ascrail2000-hr div {
+  border-width: 0 !important;
   background-color: #cccccc !important;
-  background-clip: padding-box !important;
 }
-/* line 1055, ../scss/_base.scss */
+/* line 1054, ../scss/_base.scss */
 #ascrail2000 div:hover, #ascrail2000-hr div:hover {
   background-color: #999999 !important;
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25) !important;
 }
-/* line 1059, ../scss/_base.scss */
+/* line 1058, ../scss/_base.scss */
 #ascrail2000 div:active, #ascrail2000-hr div:active {
   background-color: #7f7f7f !important;
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35) !important;
 }
-/* line 1064, ../scss/_base.scss */
+/* line 1063, ../scss/_base.scss */
 #ascrail2000.active div, #ascrail2000-hr.active div {
   background-color: #7f7f7f !important;
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35) !important;
 }
 
-/* line 1070, ../scss/_base.scss */
+/* line 1069, ../scss/_base.scss */
 #ascrail2000 {
-  width: 12px !important;
-  border-right: 1px solid whitesmoke !important;
-  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1) !important;
+  width: 10px !important;
 }
-/* line 1072, ../scss/_base.scss */
+/* line 1071, ../scss/_base.scss */
 .lt-ie9 #ascrail2000 {
   width: 11px !important;
+  right: -1px !important;
 }
-/* line 1077, ../scss/_base.scss */
+/* line 1075, ../scss/_base.scss */
+#ascrail2000:hover, #ascrail2000.active {
+  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1) !important;
+}
+/* line 1078, ../scss/_base.scss */
 #ascrail2000 div {
   min-height: 28px !important;
   padding: 100px 0 0 !important;
   box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07) !important;
-  left: 1px !important;
-  width: 8px !important;
+  width: 10px !important;
 }
 
 /* line 1086, ../scss/_base.scss */
 #ascrail2000-hr {
-  height: 12px !important;
-  border-bottom: 1px solid whitesmoke !important;
+  height: 10px !important;
+}
+/* line 1088, ../scss/_base.scss */
+#ascrail2000-hr:hover, #ascrail2000-hr.active {
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1) !important;
 }
-/* line 1090, ../scss/_base.scss */
+/* line 1091, ../scss/_base.scss */
 #ascrail2000-hr div {
   min-width: 28px !important;
   padding: 0 0 0 100px !important;
-  top: 1px !important;
-  height: 8px !important;
   box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.07) !important;
+  height: 10px !important;
 }
 
 /* line 1114, ../scss/_base.scss */
