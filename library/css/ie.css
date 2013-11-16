@@ -380,7 +380,7 @@ body {
     width: 100%;
   }
 
-  /* line 52, ../scss/_grid.scss */
+  /* line 51, ../scss/_grid.scss */
   .grid-container {
     max-width: 96%;
   }
@@ -389,7 +389,7 @@ body {
 /* "Tablet" screen width */
 /*======================= */
 @media screen and (max-width: 1030px) {
-  /* line 72, ../scss/_grid.scss */
+  /* line 71, ../scss/_grid.scss */
   .grid-container {
     max-width: 96%;
   }
