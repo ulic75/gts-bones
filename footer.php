@@ -6,10 +6,6 @@
 				<div class="grid-col-33"><?php get_sidebar('footer2'); ?></div>
 				<div class="grid-col-33"><?php get_sidebar('footer3'); ?></div>
 
-				<nav role="navigation">
-						<?php bones_footer_links(); ?>
-				</nav>
-
 			</div> <?php // end #inner-footer ?>
 
 			<div class="outer-footer">
