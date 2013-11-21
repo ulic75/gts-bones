@@ -207,4 +207,13 @@ function fullhtml_user_can_richedit($c) {
 	return $c;
 }
 
+function display_post_screenshots() {
+	$screenshots = get_post_meta(get_the_ID(), 'screenshot', false);
+	foreach($screenshots as $screenshot) {
+		echo '<a class="lightbox" href="'.$screenshot.'">';
+		echo '<img src="'.$screenshot.'" />';
+		echo '</a>';
+	}
+}
+
 ?>

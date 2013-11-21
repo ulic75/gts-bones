@@ -1009,6 +1009,15 @@ ICON STYLES
 	}
 }
 
+.product-screenshots {
+	text-align: center;
+	img {
+		width: 75%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+}
+
 .post-91 {
 	.accent-strip {
 		background-color: $link-color;

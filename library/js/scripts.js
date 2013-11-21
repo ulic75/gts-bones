@@ -95,6 +95,8 @@ jQuery(document).ready(function($) {
 
 	$('#compact-menu').click(function() { $('.top-nav').slideToggle(300); });
 
+	$(".lightbox").nivoLightbox();
+
 }); /* end of as page load scripts */
 
 

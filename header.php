@@ -54,10 +54,10 @@
 
 				<i id="compact-menu" class="icon-menu"></i>
 
-			</div> <?php // end #inner-header ?>
-
 				<nav role="navigation">
 					<?php bones_main_nav(); ?>
 				</nav>
+
+			</div> <?php // end #inner-header ?>
 
 		</header> <?php // end header ?>

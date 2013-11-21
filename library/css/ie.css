@@ -702,30 +702,27 @@ NAVIGATION STYLES
 /* line 42, ../scss/_1030up.scss */
 nav {
   position: relative;
-  top: -100px;
-  max-width: 1140px;
-  width: 100%;
+  top: 0;
+  width: 50%;
   height: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
 }
-/* line 50, ../scss/_1030up.scss */
+/* line 48, ../scss/_1030up.scss */
 body.scrolled nav {
   height: 50px;
-  top: -50px;
 }
 
-/* line 56, ../scss/_1030up.scss */
+/* line 53, ../scss/_1030up.scss */
 .nav {
   position: relative;
   border: 0;
 }
-/* line 60, ../scss/_1030up.scss */
+/* line 57, ../scss/_1030up.scss */
 .nav li {
   float: left;
   font-size: 100%;
 }
-/* line 64, ../scss/_1030up.scss */
+/* line 61, ../scss/_1030up.scss */
 .nav li a {
   border-top: 3px solid #fff;
   transition: all .15s;
@@ -733,16 +730,16 @@ body.scrolled nav {
   padding-top: 10px;
   border-bottom-width: 0;
 }
-/* line 71, ../scss/_1030up.scss */
+/* line 68, ../scss/_1030up.scss */
 body.scrolled .nav li a {
   margin-top: 0;
 }
-/* line 75, ../scss/_1030up.scss */
+/* line 72, ../scss/_1030up.scss */
 .nav li a:hover, .nav li a:focus {
   border-top-color: #ef9c00;
 }
 
-/* line 83, ../scss/_1030up.scss */
+/* line 80, ../scss/_1030up.scss */
 .top-nav {
   display: block;
   float: right;
@@ -751,7 +748,7 @@ body.scrolled .nav li a {
   right: 0px;
 }
 
-/* line 91, ../scss/_1030up.scss */
+/* line 88, ../scss/_1030up.scss */
 #compact-menu {
   display: none;
 }
@@ -759,33 +756,33 @@ body.scrolled .nav li a {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 99, ../scss/_1030up.scss */
+/* line 96, ../scss/_1030up.scss */
 #content {
   margin-top: 100px;
   transition: margin-top 0.15s;
 }
-/* line 102, ../scss/_1030up.scss */
+/* line 99, ../scss/_1030up.scss */
 body.scrolled #content {
   margin-top: 50px;
 }
 
-/* line 107, ../scss/_1030up.scss */
+/* line 104, ../scss/_1030up.scss */
 .productbox-learn-more {
   margin-bottom: 0;
 }
 
-/* line 111, ../scss/_1030up.scss */
+/* line 108, ../scss/_1030up.scss */
 .computer {
   width: 360px;
   height: 300px;
   margin: 0 0 0 -180px;
 }
 
-/* line 117, ../scss/_1030up.scss */
+/* line 114, ../scss/_1030up.scss */
 .product-header-gtsdata {
   min-height: 360px;
 }
-/* line 122, ../scss/_1030up.scss */
+/* line 119, ../scss/_1030up.scss */
 .product-header-gtsdata img {
   width: 500px;
 }
