@@ -86,7 +86,7 @@ jQuery(document).ready(function($) {
 				container.css({'width': 1,'height': 1});
 				container.css({'width': win.width(),'height': win.height()});
 				isResizing = false;
-				container.jScrollPane({'verticalGutter': 0, 'horizontalGutter': 0});
+				container.jScrollPane({autoReinitialise: true, 'verticalGutter': 0, 'horizontalGutter': 0});
 			}
 		}
 	).trigger('resize');
@@ -101,16 +101,6 @@ jQuery(document).ready(function($) {
 		} else {
 			$('body').removeClass('scrolled');
 		}
-	});
-
-	$("#ascrail2000 div, #ascrail2000-hr div").mousedown(function() {
-		var scrollParent = $(this).parent();
-		$(scrollParent).addClass('active');
-	});
-
-	var thumbs = $("#ascrail2000 div, #ascrail2000-hr div")[0];
-	$([document, thumbs]).mouseup(function() {
-		$("#ascrail2000, #ascrail2000-hr").removeClass('active');
 	});*/
 
 	$('#compact-menu').click(function() { $('.top-nav').slideToggle(300); });
