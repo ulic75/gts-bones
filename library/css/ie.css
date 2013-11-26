@@ -648,7 +648,7 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
-/* line 280, ../scss/_768up.scss */
+/* line 279, ../scss/_768up.scss */
 .product-header-gtsdata img {
   display: block;
   position: absolute;
@@ -673,11 +673,10 @@ HEADER STYLES
 /* line 16, ../scss/_1030up.scss */
 .header {
   height: 100px;
-  transition: height 0.15s;
   position: relative;
 }
 
-/* line 22, ../scss/_1030up.scss */
+/* line 21, ../scss/_1030up.scss */
 #logo {
   background: url(../images/logo-full-medium.png);
   background-size: 432px 80px;
@@ -689,7 +688,7 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 34, ../scss/_1030up.scss */
+/* line 33, ../scss/_1030up.scss */
 nav {
   position: relative;
   top: 0;
@@ -698,17 +697,17 @@ nav {
   float: right;
 }
 
-/* line 42, ../scss/_1030up.scss */
+/* line 41, ../scss/_1030up.scss */
 .nav {
   position: relative;
   border: 0;
 }
-/* line 46, ../scss/_1030up.scss */
+/* line 45, ../scss/_1030up.scss */
 .nav li {
   float: left;
   font-size: 100%;
 }
-/* line 50, ../scss/_1030up.scss */
+/* line 49, ../scss/_1030up.scss */
 .nav li a {
   border-top: 3px solid #fff;
   transition: all .15s;
@@ -716,12 +715,12 @@ nav {
   padding-top: 10px;
   border-bottom-width: 0;
 }
-/* line 57, ../scss/_1030up.scss */
+/* line 56, ../scss/_1030up.scss */
 .nav li a:hover, .nav li a:focus {
   border-top-color: #ef9c00;
 }
 
-/* line 65, ../scss/_1030up.scss */
+/* line 64, ../scss/_1030up.scss */
 .top-nav {
   display: block;
   float: right;
@@ -730,7 +729,7 @@ nav {
   right: 0px;
 }
 
-/* line 73, ../scss/_1030up.scss */
+/* line 72, ../scss/_1030up.scss */
 #compact-menu {
   display: none;
 }
@@ -738,28 +737,28 @@ nav {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 81, ../scss/_1030up.scss */
+/* line 80, ../scss/_1030up.scss */
 #content {
-  transition: margin-top 0.15s;
+  margin: 0;
 }
 
-/* line 85, ../scss/_1030up.scss */
+/* line 84, ../scss/_1030up.scss */
 .productbox-learn-more {
   margin-bottom: 0;
 }
 
-/* line 89, ../scss/_1030up.scss */
+/* line 88, ../scss/_1030up.scss */
 .computer {
   width: 360px;
   height: 300px;
   margin: 0 0 0 -180px;
 }
 
-/* line 95, ../scss/_1030up.scss */
+/* line 94, ../scss/_1030up.scss */
 .product-header-gtsdata {
   min-height: 360px;
 }
-/* line 98, ../scss/_1030up.scss */
+/* line 97, ../scss/_1030up.scss */
 .product-header-gtsdata img {
   width: 500px;
 }

@@ -191,7 +191,7 @@ nav {
 
 	li {
 		text-align: center;
-		font-size: 125%;
+		font-size: 1.25em;
 
 		a {
 			display: block;
@@ -284,21 +284,18 @@ POSTS & CONTENT STYLES
 #content {
 	position: relative;
 	background: #fff;
-	/*&:before {
-		content: "";
-		z-index: 20;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 10px;
-		box-shadow: inset 0 7px 14px -7px rgba(0,0,0,.25);
-	}*/
+	margin-top: 50px;
 }
 	.page-header-container {}
 
 		.page-header {
 			background: $link-color;
 			padding: 50px 0;
+			p {
+				margin: 0;
+				padding-bottom: 15px;
+				font-size: 1.25em;
+			}
 		}
 
 	#inner-content {}
@@ -906,7 +903,6 @@ ICON STYLES
 
 .productbox-text {
 	position: relative;
-	//padding: 0 10px;
 }
 
 .productbox-text-title {
@@ -961,7 +957,7 @@ ICON STYLES
 .product-feature {
 	padding: 0 20px;
 	p {
-		font-size: 90%;
+		font-size: .9em;
 		text-align: justify;
 	}
 }
@@ -971,7 +967,7 @@ ICON STYLES
 }
 
 .product-feature-header {
-	font-size: 125%;
+	font-size: 1.25em;
 	font-weight: bolder;
 	color: #fffafa;
 	& i {
@@ -986,7 +982,7 @@ ICON STYLES
 		margin-left: -50px;
 		margin-top: 5px;
 		text-align: center;
-		font-size: 200%;
+		font-size: 2em;
 	}
 	p {
 		padding-bottom: 25px;

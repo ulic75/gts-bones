@@ -15,7 +15,6 @@ HEADER STYLES
 
 .header {
 	height: 100px;
-	transition: height 0.15s;
 	position: relative;
 }
 
@@ -79,7 +78,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	transition: margin-top 0.15s;
+	margin: 0;
 }
 
 .productbox-learn-more {
