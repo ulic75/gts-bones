@@ -16,10 +16,10 @@
 
 		</footer> <?php // end footer ?>
 
-		<?php // all js scripts are loaded in library/bones.php ?>
-		<?php wp_footer(); ?>
-
 	</div> <? // end #site-container ?>
+
+	<?php // all js scripts are loaded in library/bones.php ?>
+	<?php wp_footer(); ?>
 
 	</body>
 
