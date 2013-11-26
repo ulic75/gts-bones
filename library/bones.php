@@ -161,12 +161,11 @@ function bones_scripts_and_styles() {
 		and your site will load faster.
 		*/
 		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'bones-js' );
 		wp_enqueue_script( 'jscrollpane' );
 		//wp_enqueue_script( 'unevent' ); delete this and the JS file later
 		wp_enqueue_script( 'formee' );
 		wp_enqueue_script( 'nivo-lightbox' );
-
+		wp_enqueue_script( 'bones-js' );
 	}
 }
 
