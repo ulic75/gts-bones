@@ -916,24 +916,6 @@ ICON STYLES
 	}
 }
 
-/*.productbox-learn-more {
-	margin-top: 20px;
-	margin-bottom: 70px;
-	text-align: center;
-	& a, & a:visited {
-		padding: 12px;
-		color: #ffffff;
-		font-weight: normal;
-		letter-spacing: 0;
-		transition: background 0.15s;
-		background: lighten($text-color, 45%);
-		border-width: 0;
-		&:hover, &:active, .productbox:hover & {
-			background: $link-color;
-		}
-	}
-}*/
-
 .product-header-gtsdata {
 	position: relative;
 	header {
@@ -951,7 +933,6 @@ ICON STYLES
 			display: block;
 		}
 	}
-
 }
 
 .product-feature {
