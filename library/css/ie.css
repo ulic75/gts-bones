@@ -674,13 +674,10 @@ HEADER STYLES
 .header {
   height: 100px;
   transition: height 0.15s;
-}
-/* line 19, ../scss/_1030up.scss */
-body.scrolled .header {
-  height: 50px;
+  position: relative;
 }
 
-/* line 24, ../scss/_1030up.scss */
+/* line 22, ../scss/_1030up.scss */
 #logo {
   background: url(../images/logo-full-medium.png);
   background-size: 432px 80px;
@@ -688,18 +685,11 @@ body.scrolled .header {
   width: 432px;
   margin: 10px 0;
 }
-/* line 30, ../scss/_1030up.scss */
-body.scrolled #logo {
-  margin: 5px 0;
-  background-size: 216px 40px;
-  height: 40px;
-  width: 216px;
-}
 
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 42, ../scss/_1030up.scss */
+/* line 34, ../scss/_1030up.scss */
 nav {
   position: relative;
   top: 0;
@@ -707,22 +697,18 @@ nav {
   height: 100px;
   float: right;
 }
-/* line 48, ../scss/_1030up.scss */
-body.scrolled nav {
-  height: 50px;
-}
 
-/* line 53, ../scss/_1030up.scss */
+/* line 42, ../scss/_1030up.scss */
 .nav {
   position: relative;
   border: 0;
 }
-/* line 57, ../scss/_1030up.scss */
+/* line 46, ../scss/_1030up.scss */
 .nav li {
   float: left;
   font-size: 100%;
 }
-/* line 61, ../scss/_1030up.scss */
+/* line 50, ../scss/_1030up.scss */
 .nav li a {
   border-top: 3px solid #fff;
   transition: all .15s;
@@ -730,16 +716,12 @@ body.scrolled nav {
   padding-top: 10px;
   border-bottom-width: 0;
 }
-/* line 68, ../scss/_1030up.scss */
-body.scrolled .nav li a {
-  margin-top: 0;
-}
-/* line 72, ../scss/_1030up.scss */
+/* line 57, ../scss/_1030up.scss */
 .nav li a:hover, .nav li a:focus {
   border-top-color: #ef9c00;
 }
 
-/* line 80, ../scss/_1030up.scss */
+/* line 65, ../scss/_1030up.scss */
 .top-nav {
   display: block;
   float: right;
@@ -748,7 +730,7 @@ body.scrolled .nav li a {
   right: 0px;
 }
 
-/* line 88, ../scss/_1030up.scss */
+/* line 73, ../scss/_1030up.scss */
 #compact-menu {
   display: none;
 }
@@ -756,33 +738,28 @@ body.scrolled .nav li a {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 96, ../scss/_1030up.scss */
+/* line 81, ../scss/_1030up.scss */
 #content {
-  margin-top: 100px;
   transition: margin-top 0.15s;
 }
-/* line 99, ../scss/_1030up.scss */
-body.scrolled #content {
-  margin-top: 50px;
-}
 
-/* line 104, ../scss/_1030up.scss */
+/* line 85, ../scss/_1030up.scss */
 .productbox-learn-more {
   margin-bottom: 0;
 }
 
-/* line 108, ../scss/_1030up.scss */
+/* line 89, ../scss/_1030up.scss */
 .computer {
   width: 360px;
   height: 300px;
   margin: 0 0 0 -180px;
 }
 
-/* line 114, ../scss/_1030up.scss */
+/* line 95, ../scss/_1030up.scss */
 .product-header-gtsdata {
   min-height: 360px;
 }
-/* line 119, ../scss/_1030up.scss */
+/* line 98, ../scss/_1030up.scss */
 .product-header-gtsdata img {
   width: 500px;
 }
@@ -810,3 +787,12 @@ header.php file to see what they are:
 .lt-ie8 .class { ... }
 
 */
+/* line 58, ../scss/ie.scss */
+.lt-ie9 .header {
+  height: 100px;
+}
+
+/* line 62, ../scss/ie.scss */
+.lt-ie9 #compact-menu {
+  display: none;
+}

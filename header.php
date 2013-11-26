@@ -40,7 +40,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-
+		<div id="site-container">
 		<header class="header" role="banner">
 
 			<? // <div id="inner-header" class="wrap clearfix"> ?>

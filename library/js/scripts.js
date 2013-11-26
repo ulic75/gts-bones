@@ -67,16 +67,36 @@ jQuery(document).ready(function($) {
 	
 	// add all your scripts here
 
-	$("body").niceScroll({
+	/*$("body").niceScroll({
 		autohidemode: 'false',
 		cursorborderradius: 0,
 		cursorwidth: 10,
 		scrollspeed: 15,
 		zindex: 9999
-	});
+	});*/
+	var win = $(window);
+	var isResizing = false;
+	win.bind(
+		'resize',
+		function()
+		{
+			if (!isResizing) {
+				isResizing = true;
+				var container = $('.no-touch #site-container');
+				container.css({'width': 1,'height': 1});
+				container.css({'width': win.width(),'height': win.height()});
+				isResizing = false;
+				container.jScrollPane({'verticalGutter': 0, 'horizontalGutter': 0});
+			}
+		}
+	).trigger('resize');
 
-	$(window).scroll(function() {
-		if($(window).scrollTop() > 0) {
+	if ($('.no-touch #site-container').width() != win.width()) {
+		win.trigger('resize');
+	}
+
+	/*$("#site-container").scroll(function() {
+		if($("#site-container").scrollTop() > 0) {
 			$('body').addClass('scrolled');
 		} else {
 			$('body').removeClass('scrolled');
@@ -91,7 +111,7 @@ jQuery(document).ready(function($) {
 	var thumbs = $("#ascrail2000 div, #ascrail2000-hr div")[0];
 	$([document, thumbs]).mouseup(function() {
 		$("#ascrail2000, #ascrail2000-hr").removeClass('active');
-	});
+	});*/
 
 	$('#compact-menu').click(function() { $('.top-nav').slideToggle(300); });
 

@@ -54,3 +54,11 @@ header.php file to see what they are:
 .lt-ie8 .class { ... }
 
 */
+
+.lt-ie9 .header {
+	height: 100px;
+}
+
+.lt-ie9 #compact-menu {
+	display: none;
+}
