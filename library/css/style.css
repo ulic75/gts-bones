@@ -2864,78 +2864,61 @@ ICON STYLES
   text-align: justify;
 }
 
-/*.productbox-learn-more {
-	margin-top: 20px;
-	margin-bottom: 70px;
-	text-align: center;
-	& a, & a:visited {
-		padding: 12px;
-		color: #ffffff;
-		font-weight: normal;
-		letter-spacing: 0;
-		transition: background 0.15s;
-		background: lighten($text-color, 45%);
-		border-width: 0;
-		&:hover, &:active, .productbox:hover & {
-			background: $link-color;
-		}
-	}
-}*/
-/* line 937, ../scss/_base.scss */
+/* line 919, ../scss/_base.scss */
 .product-header-gtsdata {
   position: relative;
 }
-/* line 939, ../scss/_base.scss */
+/* line 921, ../scss/_base.scss */
 .product-header-gtsdata header {
   margin-top: 45px;
   margin-bottom: 30px;
   width: 50%;
 }
-/* line 944, ../scss/_base.scss */
+/* line 926, ../scss/_base.scss */
 .product-header-gtsdata p {
   margin-top: 0;
   margin-bottom: 30px;
 }
-/* line 948, ../scss/_base.scss */
+/* line 930, ../scss/_base.scss */
 .product-header-gtsdata img {
   display: none;
 }
-/* line 950, ../scss/_base.scss */
+/* line 932, ../scss/_base.scss */
 .lt-ie9 .product-header-gtsdata img {
   display: block;
 }
 
-/* line 957, ../scss/_base.scss */
+/* line 938, ../scss/_base.scss */
 .product-feature {
   padding: 0 20px;
 }
-/* line 959, ../scss/_base.scss */
+/* line 940, ../scss/_base.scss */
 .product-feature p {
   font-size: .9em;
   text-align: justify;
 }
 
-/* line 965, ../scss/_base.scss */
+/* line 946, ../scss/_base.scss */
 .product-feature-row {
   padding: 50px 0;
 }
 
-/* line 969, ../scss/_base.scss */
+/* line 950, ../scss/_base.scss */
 .product-feature-header {
   font-size: 1.25em;
   font-weight: bolder;
   color: #fffafa;
 }
-/* line 973, ../scss/_base.scss */
+/* line 954, ../scss/_base.scss */
 .product-feature-header i {
   margin-right: 10px;
 }
 
-/* line 978, ../scss/_base.scss */
+/* line 959, ../scss/_base.scss */
 .product-details, .product-screenshots {
   padding: 50px 20px;
 }
-/* line 980, ../scss/_base.scss */
+/* line 961, ../scss/_base.scss */
 .product-details i, .product-screenshots i {
   position: absolute;
   margin-left: -50px;
@@ -2943,28 +2926,28 @@ ICON STYLES
   text-align: center;
   font-size: 2em;
 }
-/* line 987, ../scss/_base.scss */
+/* line 968, ../scss/_base.scss */
 .product-details p, .product-screenshots p {
   padding-bottom: 25px;
   padding-left: 50px;
   margin: 0;
 }
 
-/* line 994, ../scss/_base.scss */
+/* line 975, ../scss/_base.scss */
 .product-screenshots {
   text-align: center;
 }
-/* line 996, ../scss/_base.scss */
+/* line 977, ../scss/_base.scss */
 .product-screenshots img {
   height: auto;
 }
-/* line 999, ../scss/_base.scss */
+/* line 980, ../scss/_base.scss */
 .product-screenshots a {
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
 }
-/* line 1003, ../scss/_base.scss */
+/* line 984, ../scss/_base.scss */
 .product-screenshots a:before {
   content: "";
   background: url(../images/expand.png);
@@ -2979,12 +2962,12 @@ ICON STYLES
   margin-left: -15px;
 }
 
-/* line 1020, ../scss/_base.scss */
+/* line 1001, ../scss/_base.scss */
 .post-91 .accent-strip {
   background-color: #ef9c00;
 }
 
-/* line 1025, ../scss/_base.scss */
+/* line 1006, ../scss/_base.scss */
 .computer {
   content: "";
   position: relative;
@@ -2998,17 +2981,17 @@ ICON STYLES
   background-size: 100%;
 }
 
-/* line 1038, ../scss/_base.scss */
+/* line 1019, ../scss/_base.scss */
 .contact-container {
   padding: 50px 0;
 }
 
-/* line 1042, ../scss/_base.scss */
+/* line 1023, ../scss/_base.scss */
 .contact-section {
   margin-bottom: 30px;
 }
 
-/* line 1061, ../scss/_base.scss */
+/* line 1042, ../scss/_base.scss */
 form .formee-txt,
 .formee input[type="date"],
 .formee input[type="datetime"],
@@ -3027,7 +3010,7 @@ form .formee-txt,
 .formee select {
   margin: 5px 0;
 }
-/* line 1063, ../scss/_base.scss */
+/* line 1044, ../scss/_base.scss */
 form .formee-txt:focus,
 .formee input[type="date"]:focus,
 .formee input[type="datetime"]:focus,
@@ -3047,7 +3030,7 @@ form .formee-txt:focus,
   border-color: #ffd689;
 }
 
-/* line 1071, ../scss/_base.scss */
+/* line 1052, ../scss/_base.scss */
 .formee-button,
 .formee input[type="submit"],
 .formee input[type="button"],
@@ -3334,8 +3317,13 @@ you can add resource intensive styles.
     height: 100px;
     position: relative;
   }
+  /* line 19, ../scss/_1030up.scss */
+  body.scrolled .header {
+    position: fixed;
+    height: 50px;
+  }
 
-  /* line 21, ../scss/_1030up.scss */
+  /* line 25, ../scss/_1030up.scss */
   #logo {
     background: url(../images/logo-full-medium.png);
     background-size: 432px 80px;
@@ -3343,11 +3331,18 @@ you can add resource intensive styles.
     width: 432px;
     margin: 10px 0;
   }
+  /* line 31, ../scss/_1030up.scss */
+  body.scrolled #logo {
+    margin: 5px 0;
+    background-size: 216px 40px;
+    height: 40px;
+    width: 216px;
+  }
 
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 33, ../scss/_1030up.scss */
+  /* line 43, ../scss/_1030up.scss */
   nav {
     position: relative;
     top: 0;
@@ -3355,31 +3350,39 @@ you can add resource intensive styles.
     height: 100px;
     float: right;
   }
+  /* line 49, ../scss/_1030up.scss */
+  body.scrolled nav {
+    height: 50px;
+  }
 
-  /* line 41, ../scss/_1030up.scss */
+  /* line 54, ../scss/_1030up.scss */
   .nav {
     position: relative;
     border: 0;
   }
-  /* line 45, ../scss/_1030up.scss */
+  /* line 58, ../scss/_1030up.scss */
   .nav li {
     float: left;
     font-size: 100%;
   }
-  /* line 49, ../scss/_1030up.scss */
+  /* line 62, ../scss/_1030up.scss */
   .nav li a {
     border-top: 3px solid #fff;
-    transition: all .15s;
+    transition: border-color .2s;
     margin-top: 28px;
     padding-top: 10px;
     border-bottom-width: 0;
   }
-  /* line 56, ../scss/_1030up.scss */
+  /* line 68, ../scss/_1030up.scss */
+  body.scrolled .nav li a {
+    margin-top: 0;
+  }
+  /* line 71, ../scss/_1030up.scss */
   .nav li a:hover, .nav li a:focus {
     border-top-color: #ef9c00;
   }
 
-  /* line 64, ../scss/_1030up.scss */
+  /* line 79, ../scss/_1030up.scss */
   .top-nav {
     display: block;
     float: right;
@@ -3388,7 +3391,7 @@ you can add resource intensive styles.
     right: 0px;
   }
 
-  /* line 72, ../scss/_1030up.scss */
+  /* line 87, ../scss/_1030up.scss */
   #compact-menu {
     display: none;
   }
@@ -3396,28 +3399,32 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 80, ../scss/_1030up.scss */
+  /* line 95, ../scss/_1030up.scss */
   #content {
     margin: 0;
   }
+  /* line 97, ../scss/_1030up.scss */
+  body.scrolled #content {
+    margin-top: 50px;
+  }
 
-  /* line 84, ../scss/_1030up.scss */
+  /* line 102, ../scss/_1030up.scss */
   .productbox-learn-more {
     margin-bottom: 0;
   }
 
-  /* line 88, ../scss/_1030up.scss */
+  /* line 106, ../scss/_1030up.scss */
   .computer {
     width: 360px;
     height: 300px;
     margin: 0 0 0 -180px;
   }
 
-  /* line 94, ../scss/_1030up.scss */
+  /* line 112, ../scss/_1030up.scss */
   .product-header-gtsdata {
     min-height: 360px;
   }
-  /* line 97, ../scss/_1030up.scss */
+  /* line 115, ../scss/_1030up.scss */
   .product-header-gtsdata img {
     width: 500px;
   }

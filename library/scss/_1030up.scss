@@ -16,6 +16,10 @@ HEADER STYLES
 .header {
 	height: 100px;
 	position: relative;
+	body.scrolled & {
+		position: fixed;
+		height: 50px;
+	}
 }
 
 	#logo {
@@ -24,6 +28,12 @@ HEADER STYLES
 		height: 80px;
 		width: 432px;
 		margin: 10px 0;
+		body.scrolled & {
+			margin: 5px 0;
+			background-size: 216px 40px;
+			height: 40px;
+			width: 216px;
+		}
 	}
 
 /*********************
@@ -36,6 +46,9 @@ nav {
 	width: 50%;
 	height: 100px;
 	float: right;
+	body.scrolled & {
+		height: 50px;
+	}
 }
 
 .nav {
@@ -48,11 +61,13 @@ nav {
 
 		a {
 			border-top: 3px solid #fff;
-			transition: all .15s;
+			transition: border-color .2s;
 			margin-top: 28px;
 			padding-top: 10px;
 			border-bottom-width: 0;
-
+			body.scrolled & {
+				margin-top: 0;
+			}	
 			&:hover, &:focus {
 				border-top-color: $link-color;
 			}
@@ -79,6 +94,9 @@ POSTS & CONTENT STYLES
 
 #content {
 	margin: 0;
+	body.scrolled & {
+		margin-top: 50px;
+	}
 }
 
 .productbox-learn-more {

@@ -67,15 +67,12 @@ jQuery(document).ready(function($) {
 	
 	// add all your scripts here
 
-	/*$("body").niceScroll({
-		autohidemode: 'false',
-		cursorborderradius: 0,
-		cursorwidth: 10,
-		scrollspeed: 15,
-		zindex: 9999
-	});*/
+	/* START Scrolling Stuff */
 	var win = $(window);
 	var isResizing = false;
+	var scrollReset = false;
+	var scrollContainer = $('.no-touch #site-container').jScrollPane();
+	var scrollApi = scrollContainer.data('jsp');
 	win.bind(
 		'resize',
 		function()
@@ -86,7 +83,7 @@ jQuery(document).ready(function($) {
 				container.css({'width': 1,'height': 1});
 				container.css({'width': win.width(),'height': win.height()});
 				isResizing = false;
-				container.jScrollPane({autoReinitialise: true, 'verticalGutter': 0, 'horizontalGutter': 0});
+				container.jScrollPane({'verticalGutter': 0, 'horizontalGutter': 0});
 			}
 		}
 	).trigger('resize');
@@ -95,13 +92,22 @@ jQuery(document).ready(function($) {
 		win.trigger('resize');
 	}
 
-	/*$("#site-container").scroll(function() {
-		if($("#site-container").scrollTop() > 0) {
-			$('body').addClass('scrolled');
-		} else {
-			$('body').removeClass('scrolled');
+	$('.no-touch #site-container').bind(
+		'jsp-scroll-y',
+		function(event, scrollPositionY, isAtTop, isAtBottom) {
+			if(isAtTop) {
+				$('body').removeClass('scrolled');
+				scrollReset = false;
+			} else {
+				$('body').addClass('scrolled');
+				if(!scrollReset) {
+					scrollApi.reinitialise();
+					scrollReset = true;
+				}
+			}
 		}
-	});*/
+	);
+	/* END Scrolling Stuff */
 
 	$('#compact-menu').click(function() { $('.top-nav').slideToggle(300); });
 

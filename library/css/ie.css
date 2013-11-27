@@ -675,8 +675,13 @@ HEADER STYLES
   height: 100px;
   position: relative;
 }
+/* line 19, ../scss/_1030up.scss */
+body.scrolled .header {
+  position: fixed;
+  height: 50px;
+}
 
-/* line 21, ../scss/_1030up.scss */
+/* line 25, ../scss/_1030up.scss */
 #logo {
   background: url(../images/logo-full-medium.png);
   background-size: 432px 80px;
@@ -684,11 +689,18 @@ HEADER STYLES
   width: 432px;
   margin: 10px 0;
 }
+/* line 31, ../scss/_1030up.scss */
+body.scrolled #logo {
+  margin: 5px 0;
+  background-size: 216px 40px;
+  height: 40px;
+  width: 216px;
+}
 
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 33, ../scss/_1030up.scss */
+/* line 43, ../scss/_1030up.scss */
 nav {
   position: relative;
   top: 0;
@@ -696,31 +708,39 @@ nav {
   height: 100px;
   float: right;
 }
+/* line 49, ../scss/_1030up.scss */
+body.scrolled nav {
+  height: 50px;
+}
 
-/* line 41, ../scss/_1030up.scss */
+/* line 54, ../scss/_1030up.scss */
 .nav {
   position: relative;
   border: 0;
 }
-/* line 45, ../scss/_1030up.scss */
+/* line 58, ../scss/_1030up.scss */
 .nav li {
   float: left;
   font-size: 100%;
 }
-/* line 49, ../scss/_1030up.scss */
+/* line 62, ../scss/_1030up.scss */
 .nav li a {
   border-top: 3px solid #fff;
-  transition: all .15s;
+  transition: border-color .2s;
   margin-top: 28px;
   padding-top: 10px;
   border-bottom-width: 0;
 }
-/* line 56, ../scss/_1030up.scss */
+/* line 68, ../scss/_1030up.scss */
+body.scrolled .nav li a {
+  margin-top: 0;
+}
+/* line 71, ../scss/_1030up.scss */
 .nav li a:hover, .nav li a:focus {
   border-top-color: #ef9c00;
 }
 
-/* line 64, ../scss/_1030up.scss */
+/* line 79, ../scss/_1030up.scss */
 .top-nav {
   display: block;
   float: right;
@@ -729,7 +749,7 @@ nav {
   right: 0px;
 }
 
-/* line 72, ../scss/_1030up.scss */
+/* line 87, ../scss/_1030up.scss */
 #compact-menu {
   display: none;
 }
@@ -737,28 +757,32 @@ nav {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 80, ../scss/_1030up.scss */
+/* line 95, ../scss/_1030up.scss */
 #content {
   margin: 0;
 }
+/* line 97, ../scss/_1030up.scss */
+body.scrolled #content {
+  margin-top: 50px;
+}
 
-/* line 84, ../scss/_1030up.scss */
+/* line 102, ../scss/_1030up.scss */
 .productbox-learn-more {
   margin-bottom: 0;
 }
 
-/* line 88, ../scss/_1030up.scss */
+/* line 106, ../scss/_1030up.scss */
 .computer {
   width: 360px;
   height: 300px;
   margin: 0 0 0 -180px;
 }
 
-/* line 94, ../scss/_1030up.scss */
+/* line 112, ../scss/_1030up.scss */
 .product-header-gtsdata {
   min-height: 360px;
 }
-/* line 97, ../scss/_1030up.scss */
+/* line 115, ../scss/_1030up.scss */
 .product-header-gtsdata img {
   width: 500px;
 }
@@ -789,9 +813,24 @@ header.php file to see what they are:
 /* line 58, ../scss/ie.scss */
 .lt-ie9 .header {
   height: 100px;
+  border-bottom: 2px solid #cdcdcd;
 }
 
-/* line 62, ../scss/ie.scss */
+/* line 63, ../scss/ie.scss */
 .lt-ie9 #compact-menu {
   display: none;
+}
+
+/* line 68, ../scss/ie.scss */
+.lt-ie9 #logo {
+  background: url(../images/logo-full-medium.png);
+  height: 80px;
+  width: 432px;
+  margin: 10px 0;
+}
+/* line 74, ../scss/ie.scss */
+.lt-ie9 body.scrolled #logo {
+  background: url(../images/logo-full-small.png);
+  height: 40px;
+  width: 216px;
 }

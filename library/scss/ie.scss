@@ -57,8 +57,23 @@ header.php file to see what they are:
 
 .lt-ie9 .header {
 	height: 100px;
+	border-bottom: 2px solid #cdcdcd;
 }
 
 .lt-ie9 #compact-menu {
 	display: none;
+}
+
+#logo {
+	.lt-ie9 & {
+		background: url(../images/logo-full-medium.png);
+		height: 80px;
+		width: 432px;
+		margin: 10px 0;
+	}
+	.lt-ie9 body.scrolled & {
+			background: url(../images/logo-full-small.png);
+			height: 40px;
+			width: 216px;
+	}
 }
