@@ -2865,61 +2865,61 @@ ICON STYLES
 }
 
 /* line 919, ../scss/_base.scss */
-.product-header-gtsdata {
+.product-header {
   position: relative;
 }
 /* line 921, ../scss/_base.scss */
-.product-header-gtsdata header {
+.product-header header {
   margin-top: 45px;
   margin-bottom: 30px;
-  width: 50%;
+  width: 100%;
 }
 /* line 926, ../scss/_base.scss */
-.product-header-gtsdata p {
+.product-header p {
   margin-top: 0;
   margin-bottom: 30px;
 }
 /* line 930, ../scss/_base.scss */
-.product-header-gtsdata img {
+.product-header img {
   display: none;
 }
 /* line 932, ../scss/_base.scss */
-.lt-ie9 .product-header-gtsdata img {
+.lt-ie9 .product-header img {
   display: block;
 }
 
 /* line 938, ../scss/_base.scss */
-.product-feature {
-  padding: 0 20px;
+.product-highlight-section {
+  padding: 40px 0 30px 0;
 }
-/* line 940, ../scss/_base.scss */
-.product-feature p {
+
+/* line 942, ../scss/_base.scss */
+.product-highlight {
+  padding: 10px 20px;
+}
+/* line 944, ../scss/_base.scss */
+.product-highlight p {
   font-size: .9em;
   text-align: justify;
 }
 
-/* line 946, ../scss/_base.scss */
-.product-feature-row {
-  padding: 50px 0;
-}
-
 /* line 950, ../scss/_base.scss */
-.product-feature-header {
+.product-highlight-header {
   font-size: 1.25em;
   font-weight: bolder;
   color: #fffafa;
 }
 /* line 954, ../scss/_base.scss */
-.product-feature-header i {
+.product-highlight-header i {
   margin-right: 10px;
 }
 
 /* line 959, ../scss/_base.scss */
-.product-details, .product-screenshots {
+.product-features {
   padding: 50px 20px;
 }
 /* line 961, ../scss/_base.scss */
-.product-details i, .product-screenshots i {
+.product-features i {
   position: absolute;
   margin-left: -50px;
   margin-top: 5px;
@@ -2927,7 +2927,7 @@ ICON STYLES
   font-size: 2em;
 }
 /* line 968, ../scss/_base.scss */
-.product-details p, .product-screenshots p {
+.product-features p {
   padding-bottom: 25px;
   padding-left: 50px;
   margin: 0;
@@ -2935,19 +2935,20 @@ ICON STYLES
 
 /* line 975, ../scss/_base.scss */
 .product-screenshots {
+  padding: 50px 20px;
   text-align: center;
 }
-/* line 977, ../scss/_base.scss */
+/* line 978, ../scss/_base.scss */
 .product-screenshots img {
   height: auto;
 }
-/* line 980, ../scss/_base.scss */
+/* line 981, ../scss/_base.scss */
 .product-screenshots a {
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
 }
-/* line 984, ../scss/_base.scss */
+/* line 985, ../scss/_base.scss */
 .product-screenshots a:before {
   content: "";
   background: url(../images/expand.png);
@@ -2962,12 +2963,12 @@ ICON STYLES
   margin-left: -15px;
 }
 
-/* line 1001, ../scss/_base.scss */
-.post-91 .accent-strip {
+/* line 1002, ../scss/_base.scss */
+.accent-strip.accent-gtsdata {
   background-color: #ef9c00;
 }
 
-/* line 1006, ../scss/_base.scss */
+/* line 1007, ../scss/_base.scss */
 .computer {
   content: "";
   position: relative;
@@ -2981,17 +2982,17 @@ ICON STYLES
   background-size: 100%;
 }
 
-/* line 1019, ../scss/_base.scss */
+/* line 1020, ../scss/_base.scss */
 .contact-container {
   padding: 50px 0;
 }
 
-/* line 1023, ../scss/_base.scss */
+/* line 1024, ../scss/_base.scss */
 .contact-section {
   margin-bottom: 30px;
 }
 
-/* line 1042, ../scss/_base.scss */
+/* line 1043, ../scss/_base.scss */
 form .formee-txt,
 .formee input[type="date"],
 .formee input[type="datetime"],
@@ -3010,7 +3011,7 @@ form .formee-txt,
 .formee select {
   margin: 5px 0;
 }
-/* line 1044, ../scss/_base.scss */
+/* line 1045, ../scss/_base.scss */
 form .formee-txt:focus,
 .formee input[type="date"]:focus,
 .formee input[type="datetime"]:focus,
@@ -3030,7 +3031,7 @@ form .formee-txt:focus,
   border-color: #ffd689;
 }
 
-/* line 1052, ../scss/_base.scss */
+/* line 1053, ../scss/_base.scss */
 .formee-button,
 .formee input[type="submit"],
 .formee input[type="button"],
@@ -3283,8 +3284,16 @@ you can add resource intensive styles.
   }
 
   /* end .footer-links */
-  /* line 279, ../scss/_768up.scss */
-  .product-header-gtsdata img {
+  /* line 278, ../scss/_768up.scss */
+  .product-header {
+    min-height: 300px;
+  }
+  /* line 280, ../scss/_768up.scss */
+  .product-header header {
+    width: 50%;
+  }
+  /* line 283, ../scss/_768up.scss */
+  .product-header img {
     display: block;
     position: absolute;
     bottom: 0;
@@ -3421,11 +3430,11 @@ you can add resource intensive styles.
   }
 
   /* line 112, ../scss/_1030up.scss */
-  .product-header-gtsdata {
+  .product-header {
     min-height: 360px;
   }
   /* line 115, ../scss/_1030up.scss */
-  .product-header-gtsdata img {
+  .product-header img {
     width: 500px;
   }
 }

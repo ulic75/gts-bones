@@ -648,8 +648,16 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
-/* line 279, ../scss/_768up.scss */
-.product-header-gtsdata img {
+/* line 278, ../scss/_768up.scss */
+.product-header {
+  min-height: 300px;
+}
+/* line 280, ../scss/_768up.scss */
+.product-header header {
+  width: 50%;
+}
+/* line 283, ../scss/_768up.scss */
+.product-header img {
   display: block;
   position: absolute;
   bottom: 0;
@@ -779,11 +787,11 @@ body.scrolled #content {
 }
 
 /* line 112, ../scss/_1030up.scss */
-.product-header-gtsdata {
+.product-header {
   min-height: 360px;
 }
 /* line 115, ../scss/_1030up.scss */
-.product-header-gtsdata img {
+.product-header img {
   width: 500px;
 }
 

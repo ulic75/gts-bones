@@ -275,7 +275,11 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
-.product-header-gtsdata {
+.product-header {
+	min-height: 300px;
+	header {
+		width: 50%;
+	}
 	img {
 		display: block;
 		position: absolute;
