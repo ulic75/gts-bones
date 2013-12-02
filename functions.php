@@ -207,19 +207,4 @@ function fullhtml_user_can_richedit($c) {
 	return $c;
 }
 
-function display_post_screenshots() {
-	$screenshots = get_post_meta(get_the_ID(), 'screenshot', false);
-	if($screenshots) {
-		foreach($screenshots as $screenshot) {
-			$values = explode("|", $screenshot);
-			$thumb = $values[0];
-			$full = $values[1];
-
-			echo '<a rel="group" class="fancybox" href="'.$full.'">';
-			echo '<img src="'.$thumb.'" />';
-			echo '</a>';
-		}
-	}
-}
-
 ?>
