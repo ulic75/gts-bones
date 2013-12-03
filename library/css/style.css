@@ -1814,29 +1814,29 @@ form .formee-txt:focus,
   left: 0;
   cursor: pointer;
 }
-/* line 75, ../scss/_jscrollpane.scss */
+/* line 74, ../scss/_jscrollpane.scss */
 .jspVerticalBar .jspDrag {
   box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
 }
-/* line 78, ../scss/_jscrollpane.scss */
+/* line 77, ../scss/_jscrollpane.scss */
 .jspVerticalBar .jspDrag.jspHover {
   background-color: #999999;
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 82, ../scss/_jscrollpane.scss */
+/* line 81, ../scss/_jscrollpane.scss */
 .jspVerticalBar .jspDrag.jspActive {
   background-color: #7f7f7f;
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35);
 }
 
-/* line 90, ../scss/_jscrollpane.scss */
+/* line 89, ../scss/_jscrollpane.scss */
 .jspHorizontalBar .jspTrack,
 .jspHorizontalBar .jspDrag {
   float: left;
   height: 100%;
 }
 
-/* line 96, ../scss/_jscrollpane.scss */
+/* line 95, ../scss/_jscrollpane.scss */
 .jspArrow {
   background: #50506d;
   text-indent: -20000px;
@@ -1846,30 +1846,30 @@ form .formee-txt:focus,
   margin: 0;
 }
 
-/* line 106, ../scss/_jscrollpane.scss */
+/* line 105, ../scss/_jscrollpane.scss */
 .jspArrow.jspDisabled {
   cursor: default;
   background: #80808d;
 }
 
-/* line 112, ../scss/_jscrollpane.scss */
+/* line 111, ../scss/_jscrollpane.scss */
 .jspVerticalBar .jspArrow {
   height: 16px;
 }
 
-/* line 117, ../scss/_jscrollpane.scss */
+/* line 116, ../scss/_jscrollpane.scss */
 .jspHorizontalBar .jspArrow {
   width: 16px;
   float: left;
   height: 100%;
 }
 
-/* line 124, ../scss/_jscrollpane.scss */
+/* line 123, ../scss/_jscrollpane.scss */
 .jspVerticalBar .jspArrow:focus {
   outline: none;
 }
 
-/* line 129, ../scss/_jscrollpane.scss */
+/* line 128, ../scss/_jscrollpane.scss */
 .jspCorner {
   background: #eeeef4;
   float: left;
@@ -1877,7 +1877,7 @@ form .formee-txt:focus,
 }
 
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
-/* line 137, ../scss/_jscrollpane.scss */
+/* line 136, ../scss/_jscrollpane.scss */
 * html .jspCorner {
   margin: 0 -3px 0 0;
 }
@@ -2796,6 +2796,21 @@ ICON STYLES
 /* line 45, ../scss/_icons.scss */
 .icon-print:before {
   content: "\e610";
+}
+
+/* line 48, ../scss/_icons.scss */
+.icon-cabinet:before {
+  content: "\e611";
+}
+
+/* line 51, ../scss/_icons.scss */
+.icon-hourglass:before {
+  content: "\e612";
+}
+
+/* line 54, ../scss/_icons.scss */
+.icon-airplane:before {
+  content: "\e613";
 }
 
 /* line 860, ../scss/_base.scss */
