@@ -2813,6 +2813,11 @@ ICON STYLES
   content: "\e613";
 }
 
+/* line 57, ../scss/_icons.scss */
+.icon-download:before {
+  content: "\e614";
+}
+
 /* line 860, ../scss/_base.scss */
 .productbox {
   position: relative;
