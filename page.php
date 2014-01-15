@@ -11,25 +11,23 @@
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
-
-									<h1 class="page-title"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link() );
-									?></p>
-
+									<div class="grid-container">
+										<h1 class="page-title"><?php the_title(); ?></h1>
+									</div>
 
 								</header> <?php // end article header ?>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-								</section> <?php // end article section ?>
-
+								<div class="grid-container">
+									<section class="entry-content clearfix" itemprop="articleBody">
+										<?php the_content(); ?>
+									</section> <?php // end article section ?>
+								</div>
 								<footer class="article-footer">
 									<p class="clearfix"><?php the_tags( '<span class="tags">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p>
 
 								</footer> <?php // end article footer ?>
 
-								<?php comments_template(); ?>
+								<?php //comments_template(); ?>
 
 							</article> <?php // end article ?>
 
@@ -51,7 +49,7 @@
 
 						</div> <?php // end #main ?>
 
-						<?php get_sidebar(); ?>
+						<?php //get_sidebar(); ?>
 
 				</div> <?php // end #inner-content ?>
 
